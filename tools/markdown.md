@@ -1,4 +1,4 @@
-# 《Markdown 语法》 [Home] (mhs2019.1.15)
+# 《Markdown 语法》 [Home] (更新 mhs2019.1.15)
 
 - [兼容HTML]
 - [块元素]
