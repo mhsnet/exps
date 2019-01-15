@@ -385,79 +385,62 @@ blockquote {
 
 </head>
 <body>
-<h1 id="span-idmarkdown%E3%80%8Amarkdown-%E8%AF%AD%E6%B3%95%E3%80%8Bspan-%E5%B7%A5%E5%85%B7-tools-markdown-v100mhs20181011"><strong><span id="markdown">《Markdown 语法》</span></strong> [工具] tools-markdown-v1.0.0(mhs2018.10.11)</h1>
+<h1 id="%E3%80%8Amarkdown-%E8%AF%AD%E6%B3%95%E3%80%8Bhome-mhs2019115">《Markdown 语法》<a href="https://mhsnet.github.io/note/" title="我的技术栈学习笔记">Home</a> (mhs2019.1.15)</h1>
 <ul>
-<li><a href="https://mhsnet.github.io/note/markdown.html#overview" title="概述(Overview)">概述</a>
-<ul>
-<li><a href="https://mhsnet.github.io/note/tools/markdown.html#philosophy" title="宗旨(Philosophy)">宗旨</a></li>
 <li><a href="https://mhsnet.github.io/note/tools/markdown.html#inline-html" title="兼容HTML(Inline HTML)">兼容HTML</a></li>
-<li><a href="https://mhsnet.github.io/note/tools/markdown.html#automatic-escaping" title="特殊字符自动转换(Automatic Escaping for Special Characters)">特殊字符自动转换</a></li>
-</ul>
-</li>
 <li><a href="https://mhsnet.github.io/note/tools/markdown.html#block-elements" title="块元素(Block Elements)">块元素</a>
-<ul>
+<ol>
 <li><a href="https://mhsnet.github.io/note/tools/markdown.html#paragraphs-line" title="段落和换行(Paragraphs And Line Breaks)">段落和换行</a></li>
 <li><a href="https://mhsnet.github.io/note/tools/markdown.html#headers" title="标题(Headers)">标题</a></li>
 <li><a href="https://mhsnet.github.io/note/tools/markdown.html#block-quotes" title="块引用(Block Quotes)">块引用</a></li>
 <li><a href="https://mhsnet.github.io/note/tools/markdown.html#lists" title="列表(Lists)">列表</a></li>
 <li><a href="https://mhsnet.github.io/note/tools/markdown.html#code-blocks" title="代码块(Code Blocks)">代码块</a></li>
 <li><a href="https://mhsnet.github.io/note/tools/markdown.html#horizontal-rules" title="水平线(Horizontal Rules)">水平线</a></li>
-</ul>
+</ol>
 </li>
 <li><a href="https://mhsnet.github.io/note/tools/markdown.html#span-elements" title="段元素(Span Elements)">段元素</a>
-<ul>
+<ol>
 <li><a href="https://mhsnet.github.io/note/tools/markdown.html#links" title="链接(Links)">链接</a></li>
 <li><a href="https://mhsnet.github.io/note/tools/markdown.html#emphasis" title="强调(Emphasis)">强调</a></li>
 <li><a href="https://mhsnet.github.io/note/tools/markdown.html#code" title="代码(Code)">代码</a></li>
 <li><a href="https://mhsnet.github.io/note/tools/markdown.html#images" title="图片(Images)">图片</a></li>
-</ul>
+</ol>
 </li>
-<li><a href="https://mhsnet.github.io/note/tools/markdown.html#miscellaneous" title="其它(Miscellaneous)">其它</a>
-<ul>
-<li><a href="https://mhsnet.github.io/note/tools/markdown.html#automatic-links" title="自动链接(Automatic Links)">自动链接</a></li>
-<li><a href="https://mhsnet.github.io/note/tools/markdown.html#backslash-escapes" title="反斜杠(Backslash Escapes)">反斜杠</a></li>
 <li><a href="https://mhsnet.github.io/note/tools/markdown.html#resources" title="资源(Resources)">资源</a></li>
 </ul>
-</li>
-</ul>
-<hr>
-<h1 id="span-idoverview%E3%80%8A%E6%A6%82%E8%BF%B0%E3%80%8Bspan-markdown-%E8%AF%AD%E6%B3%95-%E5%AE%97%E6%97%A8-%E5%85%BC%E5%AE%B9html-%E7%89%B9%E6%AE%8A%E5%AD%97%E7%AC%A6%E8%87%AA%E5%8A%A8%E8%BD%AC%E6%8D%A2"><strong><span id="overview">《概述》</span> <a href="https://mhsnet.github.io/note/tools/markdown.html" title="Markdown 语法">Markdown 语法</a> <a href="https://mhsnet.github.io/note/tools/markdown.html#philosophy" title="宗旨(Philosophy)">宗旨</a> <a href="https://mhsnet.github.io/note/tools/markdown.html#inline-html" title="兼容HTML(Inline HTML)">兼容HTML</a> <a href="https://mhsnet.github.io/note/tools/markdown.html#automatic-escaping" title="特殊字符自动转换(Automatic Escaping for Special Characters)">特殊字符自动转换</a></strong></h1>
-<h2 id="span-idphilosophy%E5%AE%97%E6%97%A8span-markdown-%E8%AF%AD%E6%B3%95-%E6%A6%82%E8%BF%B0"><strong><span id="philosophy">宗旨</span> <a href="https://mhsnet.github.io/note/tools/markdown.html" title="Markdown 语法">Markdown 语法</a> <a href="https://mhsnet.github.io/note/markdown.html#overview" title="概述(Overview)">概述</a></strong></h2>
-<blockquote>
-<p>易读易写</p>
-</blockquote>
-<h2 id="span-idinline-html%E5%85%BC%E5%AE%B9htmlspan-markdown-%E8%AF%AD%E6%B3%95-%E6%A6%82%E8%BF%B0"><strong><span id="inline-html">兼容HTML</span> <a href="https://mhsnet.github.io/note/tools/markdown.html" title="Markdown 语法">Markdown 语法</a> <a href="https://mhsnet.github.io/note/markdown.html#overview" title="概述(Overview)">概述</a></strong></h2>
+<h2 id="span-idinline-html%E5%85%BC%E5%AE%B9htmlspantop"><span id="inline-html">兼容HTML</span><a href="https://mhsnet.github.io/note/tools/markdown.html" title="Markdown 语法">Top</a></h2>
 <blockquote>
 <ul>
 <li>前后空行</li>
 <li>开始结尾不缩进</li>
+<li>特殊字符可以在HTML|Code中显示</li>
 </ul>
 </blockquote>
+<table>
+  <tr><th>h1</th><th>h2</th></tr>
+  <tr><td>d1-1</td><td>2 > 1</td></tr>
+  <tr><td>d2-1</td><td>&</td></tr>
+</table>
 <pre class="hljs"><code><div>
 &lt;table&gt;
-  &lt;tr&gt;&lt;td&gt;h1&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;th&gt;h1&lt;/th&gt;&lt;th&gt;h2&lt;/th&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;d1-1&lt;/td&gt;&lt;td&gt;2 &gt; 1&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;d2-1&lt;/td&gt;&lt;td&gt;&amp;&lt;/td&gt;&lt;/tr&gt;
 &lt;/table&gt;
 
 </div></code></pre>
-<h2 id="span-idautomatic-escaping%E7%89%B9%E6%AE%8A%E5%AD%97%E7%AC%A6%E8%87%AA%E5%8A%A8%E8%BD%AC%E6%8D%A2span-markdown-%E8%AF%AD%E6%B3%95-%E6%A6%82%E8%BF%B0"><strong><span id="automatic-escaping">特殊字符自动转换</span> <a href="https://mhsnet.github.io/note/tools/markdown.html" title="Markdown 语法">Markdown 语法</a> <a href="https://mhsnet.github.io/note/markdown.html#overview" title="概述(Overview)">概述</a></strong></h2>
-<blockquote>
-<p>&lt; &amp; ©</p>
-</blockquote>
-<pre class="hljs"><code><div>&lt; &amp; &amp;copy;
-</div></code></pre>
-<hr>
-<h1 id="span-idblock-elements%E3%80%8A%E5%9D%97%E5%85%83%E7%B4%A0%E3%80%8Bspan-markdown-%E8%AF%AD%E6%B3%95-%E6%AE%B5%E8%90%BD%E5%92%8C%E6%8D%A2%E8%A1%8C-%E6%A0%87%E9%A2%98-%E5%9D%97%E5%BC%95%E7%94%A8-%E5%88%97%E8%A1%A8-%E4%BB%A3%E7%A0%81%E5%9D%97-%E6%B0%B4%E5%B9%B3%E7%BA%BF"><strong><span id="block-elements">《块元素》</span> <a href="https://mhsnet.github.io/note/tools/markdown.html" title="Markdown 语法">Markdown 语法</a> <a href="https://mhsnet.github.io/note/tools/markdown.html#paragraphs-line" title="段落和换行(Paragraphs And Line Breaks)">段落和换行</a> <a href="https://mhsnet.github.io/note/tools/markdown.html#headers" title="标题(Headers)">标题</a> <a href="https://mhsnet.github.io/note/tools/markdown.html#block-quotes" title="块引用(Block Quotes)">块引用</a> <a href="https://mhsnet.github.io/note/tools/markdown.html#lists" title="列表(Lists)">列表</a> <a href="https://mhsnet.github.io/note/tools/markdown.html#code-blocks" title="代码块(Code Blocks)">代码块</a> <a href="https://mhsnet.github.io/note/tools/markdown.html#horizontal-rules" title="水平线(Horizontal Rules)">水平线</a></strong></h1>
-<h2 id="span-idparagraphs-line%E6%AE%B5%E8%90%BD%E5%92%8C%E6%8D%A2%E8%A1%8Cspan-markdown-%E8%AF%AD%E6%B3%95-%E5%9D%97%E5%85%83%E7%B4%A0"><strong><span id="paragraphs-line">段落和换行</span> <a href="https://mhsnet.github.io/note/tools/markdown.html" title="Markdown 语法">Markdown 语法</a> <a href="https://mhsnet.github.io/note/tools/markdown.html#block-elements" title="块元素(Block Elements)">块元素</a></strong></h2>
+<h2 id="span-idblock-elements%E5%9D%97%E5%85%83%E7%B4%A0span-top"><span id="block-elements">块元素</span> <a href="https://mhsnet.github.io/note/tools/markdown.html" title="Markdown 语法">Top</a></h2>
+<h3 id="1-span-idparagraphs-line%E6%AE%B5%E8%90%BD%E5%92%8C%E6%8D%A2%E8%A1%8Cspan-top">1. <span id="paragraphs-line">段落和换行</span> <a href="https://mhsnet.github.io/note/tools/markdown.html" title="Markdown 语法">Top</a></h3>
 <blockquote>
 <ul>
 <li>段落 - 前后有空行</li>
-<li>换行 - 使用<a href="https://mhsnet.github.io/note/tools/markdown.html#block-quotes" title="块引用(Block Quotes)">块引用</a>和列表</li>
+<li>换行 - 使用<a href="https://mhsnet.github.io/note/tools/markdown.html#block-quotes" title="块引用(Block Quotes)">块引用</a>和<a href="https://mhsnet.github.io/note/tools/markdown.html#lists" title="列表(Lists)">列表</a></li>
 </ul>
 </blockquote>
-<h2 id="span-idheaders%E6%A0%87%E9%A2%98span-markdown-%E8%AF%AD%E6%B3%95-%E5%9D%97%E5%85%83%E7%B4%A0"><strong><span id="headers">标题</span> <a href="https://mhsnet.github.io/note/tools/markdown.html" title="Markdown 语法">Markdown 语法</a> <a href="https://mhsnet.github.io/note/tools/markdown.html#block-elements" title="块元素(Block Elements)">块元素</a></strong></h2>
+<h3 id="2-span-idheaders%E6%A0%87%E9%A2%98span-top">2. <span id="headers">标题</span> <a href="https://mhsnet.github.io/note/tools/markdown.html" title="Markdown 语法">Top</a></h3>
 <pre class="hljs"><code><div># h1 ## h2 ### h3 #### h4 ##### h5 ###### h6
 </div></code></pre>
-<h2 id="span-idblock-quotes%E5%9D%97%E5%BC%95%E7%94%A8span-markdown-%E8%AF%AD%E6%B3%95-%E5%9D%97%E5%85%83%E7%B4%A0"><strong><span id="block-quotes">块引用</span> <a href="https://mhsnet.github.io/note/tools/markdown.html" title="Markdown 语法">Markdown 语法</a> <a href="https://mhsnet.github.io/note/tools/markdown.html#block-elements" title="块元素(Block Elements)">块元素</a></strong></h2>
+<h3 id="3-span-idblock-quotes%E5%9D%97%E5%BC%95%E7%94%A8span-top">3. <span id="block-quotes">块引用</span> <a href="https://mhsnet.github.io/note/tools/markdown.html" title="Markdown 语法">Top</a></h3>
 <blockquote>
 <p>块1</p>
 <blockquote>
@@ -470,7 +453,7 @@ blockquote {
 
 块外
 </div></code></pre>
-<h2 id="span-idlists%E5%88%97%E8%A1%A8span-markdown-%E8%AF%AD%E6%B3%95-%E5%9D%97%E5%85%83%E7%B4%A0"><strong><span id="lists">列表</span> <a href="https://mhsnet.github.io/note/tools/markdown.html" title="Markdown 语法">Markdown 语法</a> <a href="https://mhsnet.github.io/note/tools/markdown.html#block-elements" title="块元素(Block Elements)">块元素</a></strong></h2>
+<h3 id="4-span-idlists%E5%88%97%E8%A1%A8span-top">4. <span id="lists">列表</span> <a href="https://mhsnet.github.io/note/tools/markdown.html" title="Markdown 语法">Top</a></h3>
 <blockquote>
 <ul>
 <li>1
@@ -490,7 +473,7 @@ blockquote {
 - 2
   - 2-1
 </div></code></pre>
-<h2 id="span-idcode-blocks%E4%BB%A3%E7%A0%81%E5%9D%97span-markdown-%E8%AF%AD%E6%B3%95-%E5%9D%97%E5%85%83%E7%B4%A0"><strong><span id="code-blocks">代码块</span> <a href="https://mhsnet.github.io/note/tools/markdown.html" title="Markdown 语法">Markdown 语法</a> <a href="https://mhsnet.github.io/note/tools/markdown.html#block-elements" title="块元素(Block Elements)">块元素</a></strong></h2>
+<h3 id="5-span-idcode-blocks%E4%BB%A3%E7%A0%81%E5%9D%97span-top">5. <span id="code-blocks">代码块</span> <a href="https://mhsnet.github.io/note/tools/markdown.html" title="Markdown 语法">Top</a></h3>
 <blockquote>
 <p>```</p>
 <p>code</p>
@@ -498,72 +481,44 @@ blockquote {
 </blockquote>
 <pre class="hljs"><code><div>code
 </div></code></pre>
-<h2 id="span-idhorizontal-rules%E6%B0%B4%E5%B9%B3%E7%BA%BFspan-markdown-%E8%AF%AD%E6%B3%95-%E5%9D%97%E5%85%83%E7%B4%A0"><strong><span id="horizontal-rules">水平线</span> <a href="https://mhsnet.github.io/note/tools/markdown.html" title="Markdown 语法">Markdown 语法</a> <a href="https://mhsnet.github.io/note/tools/markdown.html#block-elements" title="块元素(Block Elements)">块元素</a></strong></h2>
+<h3 id="6-span-idhorizontal-rules%E6%B0%B4%E5%B9%B3%E7%BA%BFspan-top">6. <span id="horizontal-rules">水平线</span> <a href="https://mhsnet.github.io/note/tools/markdown.html" title="Markdown 语法">Top</a></h3>
 <blockquote>
 <hr>
 </blockquote>
 <pre class="hljs"><code><div>---
 </div></code></pre>
-<hr>
-<h1 id="span-idspan-elements%E3%80%8A%E6%AE%B5%E5%85%83%E7%B4%A0%E3%80%8Bspan-markdown-%E8%AF%AD%E6%B3%95-%E9%93%BE%E6%8E%A5-%E5%BC%BA%E8%B0%83-%E4%BB%A3%E7%A0%81-%E5%9B%BE%E7%89%87"><strong><span id="span-elements">《段元素》</span> <a href="https://mhsnet.github.io/note/tools/markdown.html" title="Markdown 语法">Markdown 语法</a> <a href="https://mhsnet.github.io/note/tools/markdown.html#links" title="链接(Links)">链接</a> <a href="https://mhsnet.github.io/note/tools/markdown.html#emphasis" title="强调(Emphasis)">强调</a> <a href="https://mhsnet.github.io/note/tools/markdown.html#code" title="代码(Code)">代码</a> <a href="https://mhsnet.github.io/note/tools/markdown.html#images" title="图片(Images)">图片</a></strong></h1>
-<h2 id="span-idlinks%E9%93%BE%E6%8E%A5span-markdown-%E8%AF%AD%E6%B3%95-%E6%AE%B5%E5%85%83%E7%B4%A0"><strong><span id="links">链接</span> <a href="https://mhsnet.github.io/note/tools/markdown.html" title="Markdown 语法">Markdown 语法</a> <a href="https://mhsnet.github.io/note/tools/markdown.html#span-elements" title="段元素(Span Elements)">段元素</a></strong></h2>
+<h2 id="span-idspan-elements%E6%AE%B5%E5%85%83%E7%B4%A0span-top"><span id="span-elements">段元素</span> <a href="https://mhsnet.github.io/note/tools/markdown.html" title="Markdown 语法">Top</a></h2>
+<h3 id="1-span-idlinks%E9%93%BE%E6%8E%A5span-top">1. <span id="links">链接</span> <a href="https://mhsnet.github.io/note/tools/markdown.html" title="Markdown 语法">Top</a></h3>
 <blockquote>
-<p><a href="https://mhsnet.github.io/note/tools/markdown.html" title="Markdown 语法">Markdown 语法</a>
-<a href="https://mhsnet.github.io/note/tools/markdown.html#block-elements" title="块元素(Block Elements)">块元素</a></p>
+<p><a href="https://mhsnet.github.io/note/tools/markdown.html" title="Markdown 语法">Top</a>
+<a href="https://mhsnet.github.io/note/tools/markdown.html#block-elements" title="块元素(Block Elements)">块元素</a>
+<a href="https://mhsnet.github.io/note/">https://mhsnet.github.io/note/</a></p>
 </blockquote>
-<pre class="hljs"><code><div>[Markdown 语法]
-[Markdown 语法]: https://mhsnet.github.io/note/tools/markdown.html &quot;Markdown 语法&quot;
-[块元素]
-&lt;span id=&quot;block-elements&quot;&gt;《块元素》&lt;/span&gt;
+<pre class="hljs"><code><div>[Top]: https://mhsnet.github.io/note/tools/markdown.html &quot;Markdown 语法&quot;
+&lt;span id=&quot;block-elements&quot;&gt;xxx&lt;/span&gt;
 [块元素]: https://mhsnet.github.io/note/tools/markdown.html#block-elements &quot;块元素(Block Elements)&quot;
+&lt;https://mhsnet.github.io/note/&gt;
 </div></code></pre>
-<h2 id="span-idemphasis%E5%BC%BA%E8%B0%83span-markdown-%E8%AF%AD%E6%B3%95-%E6%AE%B5%E5%85%83%E7%B4%A0"><strong><span id="emphasis">强调</span> <a href="https://mhsnet.github.io/note/tools/markdown.html" title="Markdown 语法">Markdown 语法</a> <a href="https://mhsnet.github.io/note/tools/markdown.html#span-elements" title="段元素(Span Elements)">段元素</a></strong></h2>
+<h3 id="2-span-idemphasis%E5%BC%BA%E8%B0%83span-top">2. <span id="emphasis">强调</span> <a href="https://mhsnet.github.io/note/tools/markdown.html" title="Markdown 语法">Top</a></h3>
 <blockquote>
 <p><strong>强调</strong></p>
 </blockquote>
 <pre class="hljs"><code><div>**强调**
 </div></code></pre>
-<h2 id="span-idcode%E4%BB%A3%E7%A0%81span-markdown-%E8%AF%AD%E6%B3%95-%E6%AE%B5%E5%85%83%E7%B4%A0"><strong><span id="code">代码</span> <a href="https://mhsnet.github.io/note/tools/markdown.html" title="Markdown 语法">Markdown 语法</a> <a href="https://mhsnet.github.io/note/tools/markdown.html#span-elements" title="段元素(Span Elements)">段元素</a></strong></h2>
+<h3 id="3-span-idcode%E4%BB%A3%E7%A0%81span-top">3. <span id="code">代码</span> <a href="https://mhsnet.github.io/note/tools/markdown.html" title="Markdown 语法">Top</a></h3>
 <blockquote>
-<p><code>代码</code></p>
+<p>代码<code>&gt;&lt;=&amp;</code></p>
 </blockquote>
-<pre class="hljs"><code><div>`代码`
+<pre class="hljs"><code><div>`&gt;&lt;=&amp;`
 </div></code></pre>
-<h2 id="span-idimages%E5%9B%BE%E7%89%87span-markdown-%E8%AF%AD%E6%B3%95-%E6%AE%B5%E5%85%83%E7%B4%A0"><strong><span id="images">图片</span> <a href="https://mhsnet.github.io/note/tools/markdown.html" title="Markdown 语法">Markdown 语法</a> <a href="https://mhsnet.github.io/note/tools/markdown.html#span-elements" title="段元素(Span Elements)">段元素</a></strong></h2>
+<h3 id="4-span-idimages%E5%9B%BE%E7%89%87span-top">4. <span id="images">图片</span> <a href="https://mhsnet.github.io/note/tools/markdown.html" title="Markdown 语法">Top</a></h3>
 <blockquote>
-<p><img src="http://localhost:9098/images/img1.png" alt="图片替换文字" title="图片1(img1.png)"></p>
+<p><img src="https://mhsnet.github.io/note/imgs/mdcs.png" alt="图片替换文字" title="图片(mdcs.png)"></p>
 </blockquote>
-<pre class="hljs"><code><div>![图片替换文字][图片1]
-[图片1]: http://localhost:9098/images/img1.png &quot;图片1(img1.png)&quot;
+<pre class="hljs"><code><div>![图片替换文字][图片mdcs]
+[图片mdcs]: https://mhsnet.github.io/note/imgs/mdcs.png &quot;图片(mdcs.png)&quot;
 </div></code></pre>
-<hr>
-<h1 id="span-idmiscellaneous%E3%80%8A%E5%85%B6%E5%AE%83%E3%80%8Bspan-markdown-%E8%AF%AD%E6%B3%95-%E8%87%AA%E5%8A%A8%E9%93%BE%E6%8E%A5-%E5%8F%8D%E6%96%9C%E6%9D%A0-%E8%B5%84%E6%BA%90"><strong><span id="miscellaneous">《其它》</span> <a href="https://mhsnet.github.io/note/tools/markdown.html" title="Markdown 语法">Markdown 语法</a> <a href="https://mhsnet.github.io/note/tools/markdown.html#automatic-links" title="自动链接(Automatic Links)">自动链接</a> <a href="https://mhsnet.github.io/note/tools/markdown.html#backslash-escapes" title="反斜杠(Backslash Escapes)">反斜杠</a> <a href="https://mhsnet.github.io/note/tools/markdown.html#resources" title="资源(Resources)">资源</a></strong></h1>
-<h2 id="span-idautomatic-links%E8%87%AA%E5%8A%A8%E9%93%BE%E6%8E%A5span-markdown-%E8%AF%AD%E6%B3%95-%E5%85%B6%E5%AE%83"><strong><span id="automatic-links">自动链接</span> <a href="https://mhsnet.github.io/note/tools/markdown.html" title="Markdown 语法">Markdown 语法</a> <a href="https://mhsnet.github.io/note/tools/markdown.html#miscellaneous" title="其它(Miscellaneous)">其它</a></strong></h2>
-<blockquote>
-<p><a href="http://localhost:9098/tools/markdown">http://localhost:9098/tools/markdown</a></p>
-</blockquote>
-<pre class="hljs"><code><div>&lt;http://localhost:9098/tools/markdown&gt;
-</div></code></pre>
-<h2 id="span-idbackslash-escapes%E5%8F%8D%E6%96%9C%E6%9D%A0span-markdown-%E8%AF%AD%E6%B3%95-%E5%85%B6%E5%AE%83"><strong><span id="backslash-escapes">反斜杠</span> <a href="https://mhsnet.github.io/note/tools/markdown.html" title="Markdown 语法">Markdown 语法</a> <a href="https://mhsnet.github.io/note/tools/markdown.html#miscellaneous" title="其它(Miscellaneous)">其它</a></strong></h2>
-<blockquote>
-<p>`
-*
-_
-{
-}
-[
-]
-(
-)
-#
-+
--
-.
-!</p>
-</blockquote>
-<pre class="hljs"><code><div>\`
-</div></code></pre>
-<h2 id="span-idresources%E8%B5%84%E6%BA%90span-markdown-%E8%AF%AD%E6%B3%95-%E5%85%B6%E5%AE%83"><strong><span id="resources">资源</span> <a href="https://mhsnet.github.io/note/tools/markdown.html" title="Markdown 语法">Markdown 语法</a> <a href="https://mhsnet.github.io/note/tools/markdown.html#miscellaneous" title="其它(Miscellaneous)">其它</a></strong></h2>
+<h2 id="span-idresources%E8%B5%84%E6%BA%90span-top"><span id="resources">资源</span> <a href="https://mhsnet.github.io/note/tools/markdown.html" title="Markdown 语法">Top</a></h2>
 <blockquote>
 <ul>
 <li><a href="https://daringfireball.net/projects/markdown/">https://daringfireball.net/projects/markdown/</a></li>
@@ -571,7 +526,7 @@ _
 <li>Markdown All in One - vscode插件</li>
 </ul>
 </blockquote>
-<h1 id=""></h1>
+<h2 id=""></h2>
 
 </body>
 </html>
