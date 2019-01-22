@@ -22,7 +22,8 @@ $ unzip xxx.zip -d ./ --- 解压文件
 ###### 3. 安装php
 ```
 $ yum install -y mod_php72u
-$ yum install -y php71u-mysqlnd
+$ yum install -y php72u-mysqlnd
+$ yum install -y php72u-json
 ```
 ###### 4. 安装mariadb
 ```

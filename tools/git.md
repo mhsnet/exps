@@ -42,6 +42,7 @@ $ git remote add origin https://github.com/mhsnet/*.git
 # git branch -r --- 查看远程分支
 # git branch -a --- 查看所有分支
 # git branch <name> --- 创建分支
+# git fetch --- 更新信息
 # git push origin <name> --- 创建远程分支
 # git checkout <name> --- 切换分支
 # git checkout -t <origin/name> --- 切换远程分支
