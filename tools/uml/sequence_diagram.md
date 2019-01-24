@@ -145,5 +145,5 @@ end
 
 ##
 
-[UML图组合信息]: https://mhsnet.github.io/note/diagrams/out/tools_uml_sequence_diagram_composite_message.png "UML图组合信息"
+[UML图组合信息]: https://mhsnet.github.io/note/imgs_uml/tugs_composite_message.png "UML图组合信息"
 
