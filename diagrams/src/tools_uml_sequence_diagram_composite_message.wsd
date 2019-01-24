@@ -1,0 +1,65 @@
+@startuml
+== if语句 ==
+alt if(x < 10)
+a -[#red]> b: req1
+else else if(x > 100) 
+a -[#red]> b: req2
+else else
+a -[#red]> b: req3
+end
+== switch语句 ==
+alt switch(x) case 'a':
+a -[#blue]> b: req1
+break break;
+end
+else case 'b':
+a -[#blue]> b: req2
+break break;
+end
+else default:
+a -[#blue]> b: req3
+end
+== 简单if语句 ==
+opt if(x > 0)
+a -[#green]> b: req
+end
+== 循环 ==
+group 循环for(var i = 0; i < 5; i=i+1){}
+loop for(var i = 0; i < 5; i++)
+a -[#DarkGreen]> b: req
+end
+end
+group 循环for(var i in collection){}
+loop for(var i in collection)
+a -[#DarkGreen]> b: req
+end
+end
+group 循环collection.forEach((x)=>{});
+loop collection.forEach(x)
+a -[#DarkGreen]> b: req
+end
+end
+group 循环while(){}
+loop while(x > 0)
+a -[#DarkGreen]> b: req
+end
+end
+group 循环do{}while();
+loop do while(x > 0)
+a -[#DarkGreen]> b: req
+end
+end
+== 并行【不交错】 ==
+par
+Critical
+a -[#Yellow]>> b: req1
+a -[#Yellow]>> b: req2
+end
+a -[#Yellow]>> b: req3
+end
+== 自定义分组 ==
+group 任务1
+a -[#Gray]>> b: req1
+a -[#Gray]>> b: req2
+end
+@enduml
