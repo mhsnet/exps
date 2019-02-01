@@ -75,7 +75,8 @@ X1 ->>x X2
 6. Critical/end --- [不交错]
 7. group/end --- [自定义分组]
 ```
-@startuml
+@startuml tusd_composite_message
+title 组合信息
 == if语句 ==
 alt if(x < 10)
 a -[#red]> b: req1

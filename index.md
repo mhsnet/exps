@@ -2,6 +2,10 @@
 
 ## <span id="inline-html">基础知识</span>[Home]
 
+## <span>数据库知识</span>
+1. [PostgreSQL 笔记]
+
+
 ## <span id="com-tools">通用工具</span>[Home]
 - [Git 使用]
 - [Markdown 语法]
@@ -16,6 +20,8 @@
 
 ##
 [Home]: https://mhsnet.github.io/note/ "《MHS技术栈学习笔记》"
+
+[PostgreSQL 笔记]: https://mhsnet.github.io/note/database/postgresql_note.html "《PostgreSQL 笔记》"
 
 [通用工具]: https://mhsnet.github.io/note/index.html#com-tools "通用工具"
 [Git 使用]: https://mhsnet.github.io/note/tools/git.html "《Git 使用》"

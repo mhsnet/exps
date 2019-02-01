@@ -2,11 +2,14 @@
 
 ## <span id="inline-html">基础知识</span>[Home]
 
+## <span>数据库知识</span>
+1. [PostgreSQL 笔记]
+
+
 ## <span id="com-tools">通用工具</span>[Home]
 - [Git 使用]
 - [Markdown 语法]
 - [Uml 使用]
-  1. [时序图]
 
 ## <span id="os">操作系统</span>[Home]
 - <span id="centos">CentOS</span>
@@ -18,10 +21,12 @@
 ##
 [Home]: https://mhsnet.github.io/note/ "《MHS技术栈学习笔记》"
 
+[PostgreSQL 笔记]: https://mhsnet.github.io/note/database/postgresql_note.html "《PostgreSQL 笔记》"
+
 [通用工具]: https://mhsnet.github.io/note/index.html#com-tools "通用工具"
 [Git 使用]: https://mhsnet.github.io/note/tools/git.html "《Git 使用》"
 [Markdown 语法]: https://mhsnet.github.io/note/tools/markdown.html "《Markdown 语法》"
-[Uml 使用]: https://mhsnet.github.io/note/tools/git.html "《Uml 使用》"
+[《UML 使用》]: https://mhsnet.github.io/note/tools/uml.html "《UML 使用》"
 [时序图]: https://mhsnet.github.io/note/tools/git.html "《时序图》"
 
 [操作系统]: https://mhsnet.github.io/note/index.html#os "操作系统"
