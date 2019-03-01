@@ -3,7 +3,7 @@
 - [安装win7]
 - [安装CentOS7]
 
-## <span id="install_win7">安装win7(Install Win7)</span> [Top]
+## <span id="install-win7">安装win7</span> [安装]
 > 安装：
 > ```
 > $e node-v10.15.1-x64.msi  --- 启动nodejs安装程序
@@ -16,7 +16,7 @@
 > 1. 卸载
 > 2. 重新安装
 
-## <span id="install-centos7">安装CentOS7</span> [Top]
+## <span id="install-centos7">安装CentOS7</span> [安装]
 > 安装：
 > 添加nodejs的YUM源
 > ```
@@ -28,7 +28,7 @@
 ##
 [《MHS 学习笔记》]: https://mhsnet.github.io/note/ "《MHS 学习笔记》"
 [《Node 指南》]: https://mhsnet.github.io/note/node/guide/index.html "《Node 指南》"
-[顶部]: https://mhsnet.github.io/note/node/guide/start/install.html "安装"
+[安装]: https://mhsnet.github.io/note/node/guide/start/install.html "安装"
 
 [安装win7]: https://mhsnet.github.io/note/node/guide/start/install.html#install-win7 "安装win7"
 [安装CentOS7]: https://mhsnet.github.io/note/node/guide/start/install.html#install-centos7 "安装CentOS7"

@@ -14,7 +14,7 @@
 [《CentOS7》]: https://mhsnet.github.io/note/os/centos7/index.html "《CentOS7》"
 
 [SSH]: https://mhsnet.github.io/note/os/centos7/others/ssh.html "SSH"
-[连接超时]: https://mhsnet.github.io/note/os/centos7/others/index.html#time-out "连接超时(Time Out)"
+[连接超时]: https://mhsnet.github.io/note/os/centos7/others/ssh.html#time-out "连接超时(Time Out)"
 
 [YUM]: https://mhsnet.github.io/note/os/centos7/others/yum.html "YUM"
 [YUM指令]: https://mhsnet.github.io/note/os/centos7/others/yum.html#yum-cmd "YUM指令"

@@ -2,7 +2,7 @@
 
 - [连接超时]
 
-## <span id="time-out">连接超时</span> [Top]
+## <span id="time-out">连接超时</span> [SSH]
 ```
 $ vi /etc/ssh/sshd_config
 t> ClientAliveInterval 60 --- 判断超时时间(s)
@@ -15,4 +15,4 @@ $ systemctl restart sshd
 [《CentOS7》]: https://mhsnet.github.io/note/os/centos7/index.html "《CentOS7》"
 [SSH]: https://mhsnet.github.io/note/os/centos7/others/ssh.html "SSH"
 
-[连接超时]: https://mhsnet.github.io/note/os/centos7/others/index.html#time-out "连接超时(Time Out)"
+[连接超时]: https://mhsnet.github.io/note/os/centos7/others/ssh.html#time-out "连接超时(Time Out)"
