@@ -3,6 +3,7 @@
 - 开始(start)
   - [安装]
     - [安装win7]
+    - [安装CentOS7]
 
 
 ##
@@ -11,3 +12,4 @@
 
 [安装]: https://mhsnet.github.io/note/node/guide/start/install.html "安装"
 [安装win7]: https://mhsnet.github.io/note/node/guide/start/install.html#install_win7 "安装win7(Install Win7)"
+[安装CentOS7]: https://mhsnet.github.io/note/node/guide/start/install.html#install-centos7 "安装CentOS7"

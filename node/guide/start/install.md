@@ -5,19 +5,25 @@
 
 ## <span id="install_win7">安装win7(Install Win7)</span> [Top]
 > 安装：
-> 1. node-v10.15.1-x64.msi (运行)
-> 2. D:\\software\\nodejs (设置地址)
-> 3. npm install npm@latest -g (npm 升级)
-> 4. npm config set registry https://registry.npm.taobao.org --- 配置源(https://registry.npmjs.org/)
+> ```
+> $e node-v10.15.1-x64.msi  --- 启动nodejs安装程序
+> $e D:\\software\\nodejs --- 设置路径
+> $ npm install npm@latest -g --- npm 升级
+> $ npm config set registry https://registry.npm.taobao.org --- 配置源(https://registry.npmjs.org/)
+> ```
 
 > 升级：
 > 1. 卸载
 > 2. 重新安装
 
 ## <span id="install-centos7">安装CentOS7</span> [Top]
-```
-curl -sL https://rpm.nodesource.com/setup_10.x | bash -
-```
+> 安装：
+> 添加nodejs的YUM源
+> ```
+> $ yum install -y nodejs
+> $ npm install npm@latest -g --- npm 升级
+> $ npm config set registry https://registry.npm.taobao.org --- 配置源(https://registry.npmjs.org/)
+> ```
 
 ##
 [《MHS 学习笔记》]: https://mhsnet.github.io/note/ "《MHS 学习笔记》"

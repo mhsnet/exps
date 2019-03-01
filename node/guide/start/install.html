@@ -387,17 +387,17 @@ blockquote {
 <body>
 <h1 id="%E5%AE%89%E8%A3%85-%E3%80%8Amhs-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%8B---%E3%80%8Anode-%E6%8C%87%E5%8D%97%E3%80%8B-mhs2019228">安装 <a href="https://mhsnet.github.io/note/" title="《MHS 学习笔记》">《MHS 学习笔记》</a> -&gt; <a href="https://mhsnet.github.io/note/node/guide/index.html" title="《Node 指南》">《Node 指南》</a> (mhs2019.2.28)</h1>
 <ul>
-<li><a href="https://mhsnet.github.io/note/node/guide/start/install.html#install_win7" title="安装win7(Install Win7)">安装win7</a></li>
+<li><a href="https://mhsnet.github.io/note/node/guide/start/install.html#install-win7" title="安装win7">安装win7</a></li>
+<li><a href="https://mhsnet.github.io/note/node/guide/start/install.html#install-centos7" title="安装CentOS7">安装CentOS7</a></li>
 </ul>
 <h2 id="span-idinstallwin7%E5%AE%89%E8%A3%85win7install-win7span-top"><span id="install_win7">安装win7(Install Win7)</span> [Top]</h2>
 <blockquote>
 <p>安装：</p>
-<ol>
-<li>node-v10.15.1-x64.msi (运行)</li>
-<li>D:\software\nodejs (设置地址)</li>
-<li>npm install npm@latest -g (npm 升级)</li>
-<li>npm config set registry https://registry.npm.taobao.org --- 配置源(https://registry.npmjs.org/)</li>
-</ol>
+<pre class="hljs"><code><div>$e node-v10.15.1-x64.msi  --- 启动nodejs安装程序
+$e D:\\software\\nodejs --- 设置路径
+$ npm install npm@latest -g --- npm 升级
+$ npm config set registry https://registry.npm.taobao.org --- 配置源(https://registry.npmjs.org/)
+</div></code></pre>
 </blockquote>
 <blockquote>
 <p>升级：</p>
@@ -405,6 +405,15 @@ blockquote {
 <li>卸载</li>
 <li>重新安装</li>
 </ol>
+</blockquote>
+<h2 id="span-idinstall-centos7%E5%AE%89%E8%A3%85centos7span-top"><span id="install-centos7">安装CentOS7</span> [Top]</h2>
+<blockquote>
+<p>安装：
+添加nodejs的YUM源</p>
+<pre class="hljs"><code><div>$ yum install -y nodejs
+$ npm install npm@latest -g --- npm 升级
+$ npm config set registry https://registry.npm.taobao.org --- 配置源(https://registry.npmjs.org/)
+</div></code></pre>
 </blockquote>
 <h2 id=""></h2>
 

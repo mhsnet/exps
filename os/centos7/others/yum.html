@@ -387,8 +387,40 @@ blockquote {
 <body>
 <h1 id="yum-%E3%80%8Amhs-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%8B---%E3%80%8Acentos7%E3%80%8B-mhs201931">YUM <a href="https://mhsnet.github.io/note/" title="《MHS 学习笔记》">《MHS 学习笔记》</a> -&gt; <a href="https://mhsnet.github.io/note/os/centos7/index.html" title="《CentOS7》">《CentOS7》</a>  (mhs2019.3.1)</h1>
 <ul>
+<li><a href="https://mhsnet.github.io/note/os/centos7/others/yum.html#yum-cmd" title="YUM指令">YUM指令</a></li>
+<li><a href="https://mhsnet.github.io/note/os/centos7/others/yum.html#rpm" title="RPM">RPM</a></li>
 <li><a href="https://mhsnet.github.io/note/os/centos7/others/yum.html#yum-repository" title="YUM源">YUM源</a></li>
 </ul>
+<h2 id="span-idyum-cmdyum%E6%8C%87%E4%BB%A4span-yum"><span id="yum-cmd">YUM指令</span> <a href="https://mhsnet.github.io/note/os/centos7/others/yum.html" title="YUM">YUM</a></h2>
+<blockquote>
+<pre class="hljs"><code><div>$ yum list [available|installed|extras|updates|obsoletes|all|recent] [pkgspec] xxx*xxx | less
+$ yum search &lt;schstr&gt; --- 收索包名和描述含收索字符
+$ yum info &lt;pkgn&gt; --- 显示包详情
+$ yum install [-y] &lt;pkgn&gt; --- 安装包[不询问]
+$ yum update [-y] &lt;pkgn&gt; --- 升级包[不询问]
+$ yum remove [-y] &lt;pkgn&gt; --- 删除包[不询问] 搜索已安装包
+$ yum group list --- 查看可用group
+$ yum groupinstall &lt;&quot;Development Tools&quot;&gt; --- 安装group包
+$ yum groupupdate &lt;&quot;Development Tools&quot;&gt; --- 升级group包
+$ yum groupremove &lt;&quot;Development Tools&quot;&gt; --- 删除group包
+$ yum repolist --- 查看系统使用仓库
+$ yum provides /etc/httpd/conf/httpd.conf --- 查看文件属于哪个软件包
+$ yum clean all --- 删除缓存
+$ yum history --- 查看最近执行的命令
+$ yum history undo 6 --- 撤销某个动作
+</div></code></pre>
+</blockquote>
+<h2 id="span-idrpmrpmspan-yum"><span id="rpm">RPM</span> <a href="https://mhsnet.github.io/note/os/centos7/others/yum.html" title="YUM">YUM</a></h2>
+<blockquote>
+<pre class="hljs"><code><div>$ rpm -qa --- 已安装的软件
+$ rpm -qf &lt;path&gt; --- 文件属于哪个包[绝对路径]
+$ rpm -ql &lt;pkgn&gt; --- 安装在何处
+$ rpm -qi &lt;pkgn&gt; --- 信息
+$ rpm -qc &lt;pkgn&gt; --- 配置文件
+$ rpm -qd &lt;pkgn&gt; --- 文档
+$ rpm -qR &lt;pkgn&gt; --- 依赖
+</div></code></pre>
+</blockquote>
 <h2 id="span-idyum-repositoryyum%E6%BA%90span-yum"><span id="yum-repository">YUM源</span> <a href="https://mhsnet.github.io/note/os/centos7/others/yum.html" title="YUM">YUM</a></h2>
 <blockquote>
 <p>删除YUM源(如nodejs源)：</p>
