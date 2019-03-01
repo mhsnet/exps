@@ -1,7 +1,7 @@
 # 《MHS学习笔记》
 
 ## Node
-- [《开始Node》]
+- [《Node 指南》]
 
 ## <span>框架</span>
 1. [Aqueduct] - Dart框架
@@ -26,7 +26,7 @@
 ##
 [《MHS 学习笔记》]: https://mhsnet.github.io/note/ "《MHS 学习笔记》"
 
-[《开始Node》]: https://mhsnet.github.io/note/node/start/index.html "《开始Node》"
+[《Node 指南》]: https://mhsnet.github.io/note/node/guide/index.html "《Node 指南》"
 
 [Aqueduct]: https://mhsnet.github.io/note/framework/aqueduct/index.html "《Aqueduct》"
 
