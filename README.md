@@ -17,6 +17,7 @@
 - [Uml 使用]
 
 ## <span id="os">操作系统</span>[Home]
+- [《CentOS7》]
 - <span id="centos">CentOS</span>
   1. [os_centos_ius]
   2. [os_centos_php]
@@ -39,6 +40,7 @@
 [时序图]: https://mhsnet.github.io/note/tools/git.html "《时序图》"
 
 [操作系统]: https://mhsnet.github.io/note/index.html#os "操作系统"
+[《CentOS7》]: https://mhsnet.github.io/note/os/centos7/index.html "《CentOS7》"
 [CentOS]: https://mhsnet.github.io/note/index.html#centos "CentOS"
 [os_centos_ius]: https://mhsnet.github.io/note/os/centos/ius.html "ius"
 [os_centos_php]: https://mhsnet.github.io/note/os/centos/php.html "php"

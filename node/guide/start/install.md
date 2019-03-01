@@ -5,7 +5,7 @@
 ## <span id="install_win7">安装win7(Install Win7)</span> [Top]
 > 安装：
 > 1. node-v10.15.1-x64.msi (运行)
-> 2. D:\software\nodejs (设置地址)
+> 2. D:\\software\\nodejs (设置地址)
 > 3. npm install npm@latest -g (npm 升级)
 > 4. npm config set registry https://registry.npm.taobao.org --- 配置源(https://registry.npmjs.org/)
 
