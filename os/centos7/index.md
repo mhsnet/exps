@@ -2,6 +2,7 @@
 
 - 其它
   - [SSH]
+  - [YUM]
 
 
 ##
@@ -9,3 +10,4 @@
 [《CentOS7》]: https://mhsnet.github.io/note/os/centos7/index.html "《CentOS7》"
 
 [SSH]: https://mhsnet.github.io/note/os/centos7/others/ssh.html "SSH"
+[YUM]: https://mhsnet.github.io/note/os/centos7/others/yum.html "YUM"

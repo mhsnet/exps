@@ -5,8 +5,8 @@
 ## <span id="time-out">连接超时</span> [Top]
 ```
 $ vi /etc/ssh/sshd_config
-t> ClientAliveInterval 60
-t> ClientAliveCountMax 30
+t> ClientAliveInterval 60 --- 判断超时时间(s)
+t> ClientAliveCountMax 30 --- 判断超时次数
 $ systemctl restart sshd
 ```
 
