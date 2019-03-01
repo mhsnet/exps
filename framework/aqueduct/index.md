@@ -8,7 +8,7 @@
     - [高级路由]
     - [资源控制器]
     - [多线程和应用程序状态]
-
+  - [从数据库读取] 
 ##
 [Home]: https://mhsnet.github.io/note/ "《MHS技术栈学习笔记》"
 [Top]: https://mhsnet.github.io/note/framework/aqueduct/index.html "《Aqueduct》"
@@ -20,3 +20,5 @@
 [高级路由]: https://mhsnet.github.io/note/framework/aqueduct/tutorial/getting_started.html#advanced-routing "高级路由(Advanced Routing)"
 [资源控制器]: https://mhsnet.github.io/note/framework/aqueduct/tutorial/getting_started.html#resource-controllers  "资源控制器(ResourceControllers)"
 [多线程和应用程序状态]: https://mhsnet.github.io/note/framework/aqueduct/tutorial/getting_started.html#multi-threading-and-application-state  "多线程和应用程序状态(Multi-threading and Application State)"
+
+[从数据库读取]: https://mhsnet.github.io/note/framework/aqueduct/tutorial/reading_from_a_database.html "从数据库读取"

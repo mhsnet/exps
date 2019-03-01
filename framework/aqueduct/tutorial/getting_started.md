@@ -59,6 +59,7 @@ router
 > 例（lib/controller/users_controller.dart）：
 ```
 import 'package:aqueduct/aqueduct.dart';
+import 'package:dart_study_server/dart_study_server.dart';
 
 class UsersController extends ResourceController {
   final _users = [
@@ -92,7 +93,7 @@ class UsersController extends ResourceController {
 > 2. 伴随部署容器化，无状态Web服务成为一种需求，Aqueduct多线程使检查违反此规则更容易。
 > 3. Aqueduct运行时创建多线程，每个线程拥有独立isolated，数据不能访问其它线程。
 > 4. 每个isolated创建通道实例，每个请求只提供1个isolated，负载均衡器后多个服务运行行为相同，并且速度更快。
-> 5. 应用程序中存储数据，更改数据只会在某个isolated中更改，再次请求不太可能看到更改—另一个具有不同数据的隔离可能处理该请求。
+> 5. 应用程序中存储数据，更改数据只会在某个isolated中更改，再次请求不太可能看到更改—另一个具有不同数据的isolated可能处理该请求。
 
 ##
 [Home]: https://mhsnet.github.io/note/ "《MHS技术栈学习笔记》"
