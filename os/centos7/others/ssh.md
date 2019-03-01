@@ -15,4 +15,4 @@ $ systemctl restart sshd
 [《CentOS7》]: https://mhsnet.github.io/note/os/centos7/index.html "《CentOS7》"
 [SSH]: https://mhsnet.github.io/note/os/centos7/others/ssh.html "SSH"
 
-[连接超时]: https://mhsnet.github.io/note/os/centos7/others/ssh.html#time-out "连接超时(Time Out)"
+[连接超时]: https://mhsnet.github.io/note/os/centos7/others/ssh.html#time-out "连接超时"
