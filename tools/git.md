@@ -54,13 +54,13 @@ $ git remote add origin https://github.com/mhsnet/*.git
 ```
 
 ##
-[Home]: https://mhsnet.github.io/note/ "《MHS技术栈学习笔记》"
+[Home]: https://mhsnet.github.io/mhsstudynotes/ "《MHS技术栈学习笔记》"
 
-[Top]: https://mhsnet.github.io/note/tools/git.html "《Git 使用》"
+[Top]: https://mhsnet.github.io/mhsstudynotes/tools/git.html "《Git 使用》"
 
-[使用]: https://mhsnet.github.io/note/tools/git.html#use "《Git 使用》"
-[github使用]: https://mhsnet.github.io/note/tools/git.html#github "github使用"
-[vscode使用]: https://mhsnet.github.io/note/tools/git.html#vscode "vscode使用"
-[分支管理]: https://mhsnet.github.io/note/tools/git.html#branch "分支管理"
+[使用]: https://mhsnet.github.io/mhsstudynotes/tools/git.html#use "《Git 使用》"
+[github使用]: https://mhsnet.github.io/mhsstudynotes/tools/git.html#github "github使用"
+[vscode使用]: https://mhsnet.github.io/mhsstudynotes/tools/git.html#vscode "vscode使用"
+[分支管理]: https://mhsnet.github.io/mhsstudynotes/tools/git.html#branch "分支管理"
 
 

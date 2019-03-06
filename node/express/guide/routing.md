@@ -108,15 +108,15 @@ app.listen(port, () => console.log(`应用程序监听端口（${port}）`))
 ```
 
 ##
-[《MHS 学习笔记》]: https://mhsnet.github.io/note/ "《MHS 学习笔记》"
-[《Express 学习》]: https://mhsnet.github.io/note/node/express/index.html "《Express 学习》"
+[《MHS 学习笔记》]: https://mhsnet.github.io/mhsstudynotes/ "《MHS 学习笔记》"
+[《Express 学习》]: https://mhsnet.github.io/mhsstudynotes/node/express/index.html "《Express 学习》"
 
-[路由]: https://mhsnet.github.io/note/node/express/guide/routing.html "路由"
-[路由方法]: https://mhsnet.github.io/note/node/express/guide/routing.html#route-methods "路由方法"
+[路由]: https://mhsnet.github.io/mhsstudynotes/node/express/guide/routing.html "路由"
+[路由方法]: https://mhsnet.github.io/mhsstudynotes/node/express/guide/routing.html#route-methods "路由方法"
 
-[路由路径]: https://mhsnet.github.io/note/node/express/guide/routing.html#route-paths "路由路径"
-[Route参数]: https://mhsnet.github.io/note/node/express/guide/routing.html#route-parameters "Route参数"
-[Route处理]: https://mhsnet.github.io/note/node/express/guide/routing.html#route-handlers "Route处理"
-[Response方法]: https://mhsnet.github.io/note/node/express/guide/routing.html#response-methods "Response方法"
-[app.route()]: https://mhsnet.github.io/note/node/express/guide/routing.html#app-route "app.route()"
-[express.Router]: https://mhsnet.github.io/note/node/express/guide/routing.html#express-router "express.Router"
+[路由路径]: https://mhsnet.github.io/mhsstudynotes/node/express/guide/routing.html#route-paths "路由路径"
+[Route参数]: https://mhsnet.github.io/mhsstudynotes/node/express/guide/routing.html#route-parameters "Route参数"
+[Route处理]: https://mhsnet.github.io/mhsstudynotes/node/express/guide/routing.html#route-handlers "Route处理"
+[Response方法]: https://mhsnet.github.io/mhsstudynotes/node/express/guide/routing.html#response-methods "Response方法"
+[app.route()]: https://mhsnet.github.io/mhsstudynotes/node/express/guide/routing.html#app-route "app.route()"
+[express.Router]: https://mhsnet.github.io/mhsstudynotes/node/express/guide/routing.html#express-router "express.Router"

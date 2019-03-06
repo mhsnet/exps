@@ -92,12 +92,12 @@ code
 ### 1. <span id="links">链接</span> [Top]
 > [Top]
 > [块元素]
-> <https://mhsnet.github.io/note/>
+> <https://mhsnet.github.io/mhsstudynotes/>
 ```  
-[Top]: https://mhsnet.github.io/note/tools/markdown.html "Markdown 语法"
+[Top]: https://mhsnet.github.io/mhsstudynotes/tools/markdown.html "Markdown 语法"
 <span id="block-elements">xxx</span>
-[块元素]: https://mhsnet.github.io/note/tools/markdown.html#block-elements "块元素(Block Elements)"
-<https://mhsnet.github.io/note/>
+[块元素]: https://mhsnet.github.io/mhsstudynotes/tools/markdown.html#block-elements "块元素(Block Elements)"
+<https://mhsnet.github.io/mhsstudynotes/>
 ```
 
 ### 2. <span id="emphasis">强调</span> [Top]
@@ -116,7 +116,7 @@ code
 > ![图片替换文字][图片mdcs]
 ```
 ![图片替换文字][图片mdcs]
-[图片mdcs]: https://mhsnet.github.io/note/imgs/mdcs.png "图片(mdcs.png)"
+[图片mdcs]: https://mhsnet.github.io/mhsstudynotes/imgs/mdcs.png "图片(mdcs.png)"
 ```
 
 ## <span id="resources">资源</span> [Top]
@@ -125,26 +125,26 @@ code
 > - Markdown All in One - vscode插件 
 
 ##
-[Home]: https://mhsnet.github.io/note/ "《MHS技术栈学习笔记》"
+[Home]: https://mhsnet.github.io/mhsstudynotes/ "《MHS技术栈学习笔记》"
 
-[Top]: https://mhsnet.github.io/note/tools/markdown.html "《Markdown 语法》"
+[Top]: https://mhsnet.github.io/mhsstudynotes/tools/markdown.html "《Markdown 语法》"
 
-[兼容HTML]: https://mhsnet.github.io/note/tools/markdown.html#inline-html "兼容HTML(Inline HTML)"
+[兼容HTML]: https://mhsnet.github.io/mhsstudynotes/tools/markdown.html#inline-html "兼容HTML(Inline HTML)"
 
-[块元素]: https://mhsnet.github.io/note/tools/markdown.html#block-elements "块元素(Block Elements)"
-[段落和换行]: https://mhsnet.github.io/note/tools/markdown.html#paragraphs-line "段落和换行(Paragraphs And Line Breaks)"
-[标题]: https://mhsnet.github.io/note/tools/markdown.html#headers "标题(Headers)"
-[块引用]: https://mhsnet.github.io/note/tools/markdown.html#block-quotes "块引用(Block Quotes)"
-[列表]: https://mhsnet.github.io/note/tools/markdown.html#lists "列表(Lists)"
-[代码块]: https://mhsnet.github.io/note/tools/markdown.html#code-blocks "代码块(Code Blocks)"
-[水平线]: https://mhsnet.github.io/note/tools/markdown.html#horizontal-rules "水平线(Horizontal Rules)"
+[块元素]: https://mhsnet.github.io/mhsstudynotes/tools/markdown.html#block-elements "块元素(Block Elements)"
+[段落和换行]: https://mhsnet.github.io/mhsstudynotes/tools/markdown.html#paragraphs-line "段落和换行(Paragraphs And Line Breaks)"
+[标题]: https://mhsnet.github.io/mhsstudynotes/tools/markdown.html#headers "标题(Headers)"
+[块引用]: https://mhsnet.github.io/mhsstudynotes/tools/markdown.html#block-quotes "块引用(Block Quotes)"
+[列表]: https://mhsnet.github.io/mhsstudynotes/tools/markdown.html#lists "列表(Lists)"
+[代码块]: https://mhsnet.github.io/mhsstudynotes/tools/markdown.html#code-blocks "代码块(Code Blocks)"
+[水平线]: https://mhsnet.github.io/mhsstudynotes/tools/markdown.html#horizontal-rules "水平线(Horizontal Rules)"
 
-[段元素]: https://mhsnet.github.io/note/tools/markdown.html#span-elements "段元素(Span Elements)"
-[链接]: https://mhsnet.github.io/note/tools/markdown.html#links "链接(Links)"
-[强调]: https://mhsnet.github.io/note/tools/markdown.html#emphasis "强调(Emphasis)"
-[代码]: https://mhsnet.github.io/note/tools/markdown.html#code "代码(Code)"
-[图片]: https://mhsnet.github.io/note/tools/markdown.html#images "图片(Images)"
+[段元素]: https://mhsnet.github.io/mhsstudynotes/tools/markdown.html#span-elements "段元素(Span Elements)"
+[链接]: https://mhsnet.github.io/mhsstudynotes/tools/markdown.html#links "链接(Links)"
+[强调]: https://mhsnet.github.io/mhsstudynotes/tools/markdown.html#emphasis "强调(Emphasis)"
+[代码]: https://mhsnet.github.io/mhsstudynotes/tools/markdown.html#code "代码(Code)"
+[图片]: https://mhsnet.github.io/mhsstudynotes/tools/markdown.html#images "图片(Images)"
 
-[资源]: https://mhsnet.github.io/note/tools/markdown.html#resources "资源(Resources)"
+[资源]: https://mhsnet.github.io/mhsstudynotes/tools/markdown.html#resources "资源(Resources)"
 
-[图片mdcs]: https://mhsnet.github.io/note/imgs/mdcs.png "图片(mdcs.png)"
+[图片mdcs]: https://mhsnet.github.io/mhsstudynotes/imgs/mdcs.png "图片(mdcs.png)"

@@ -10,13 +10,13 @@
 
 
 ##
-[《MHS 学习笔记》]: https://mhsnet.github.io/note/ "《MHS 学习笔记》"
-[《CentOS7》]: https://mhsnet.github.io/note/os/centos7/index.html "《CentOS7》"
+[《MHS 学习笔记》]: https://mhsnet.github.io/mhsstudynotes/ "《MHS 学习笔记》"
+[《CentOS7》]: https://mhsnet.github.io/mhsstudynotes/os/centos7/index.html "《CentOS7》"
 
-[SSH]: https://mhsnet.github.io/note/os/centos7/others/ssh.html "SSH"
-[连接超时]: https://mhsnet.github.io/note/os/centos7/others/ssh.html#time-out "连接超时(Time Out)"
+[SSH]: https://mhsnet.github.io/mhsstudynotes/os/centos7/others/ssh.html "SSH"
+[连接超时]: https://mhsnet.github.io/mhsstudynotes/os/centos7/others/ssh.html#time-out "连接超时(Time Out)"
 
-[YUM]: https://mhsnet.github.io/note/os/centos7/others/yum.html "YUM"
-[YUM指令]: https://mhsnet.github.io/note/os/centos7/others/yum.html#yum-cmd "YUM指令"
-[RPM]: https://mhsnet.github.io/note/os/centos7/others/yum.html#rpm "RPM"
-[YUM源]: https://mhsnet.github.io/note/os/centos7/others/yum.html#yum-repository "YUM源"
+[YUM]: https://mhsnet.github.io/mhsstudynotes/os/centos7/others/yum.html "YUM"
+[YUM指令]: https://mhsnet.github.io/mhsstudynotes/os/centos7/others/yum.html#yum-cmd "YUM指令"
+[RPM]: https://mhsnet.github.io/mhsstudynotes/os/centos7/others/yum.html#rpm "RPM"
+[YUM源]: https://mhsnet.github.io/mhsstudynotes/os/centos7/others/yum.html#yum-repository "YUM源"

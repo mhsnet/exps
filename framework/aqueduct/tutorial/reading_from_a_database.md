@@ -35,10 +35,10 @@ class _User {
 > 2. 连接到哪个数据库？
 
 ##
-[Home]: https://mhsnet.github.io/note/ "《MHS技术栈学习笔记》"
-[Aqueduct]: https://mhsnet.github.io/note/framework/aqueduct/index.html "《Aqueduct》"
-[Top]: https://mhsnet.github.io/note/framework/aqueduct/tutorial/reading_from_a_database.html "从数据库读取"
+[Home]: https://mhsnet.github.io/mhsstudynotes/ "《MHS技术栈学习笔记》"
+[Aqueduct]: https://mhsnet.github.io/mhsstudynotes/framework/aqueduct/index.html "《Aqueduct》"
+[Top]: https://mhsnet.github.io/mhsstudynotes/framework/aqueduct/tutorial/reading_from_a_database.html "从数据库读取"
 
-[对象关系映射]: https://mhsnet.github.io/note/framework/aqueduct/tutorial/reading_from_a_database.html#object-relational-mapping "对象关系映射(Object-Relational Mapping)"
-[建立数据模型]: https://mhsnet.github.io/note/framework/aqueduct/tutorial/reading_from_a_database.html#building-a-data-model "建立数据模型(Building a Data Model)"
-[定义上下文]: https://mhsnet.github.io/note/framework/aqueduct/tutorial/reading_from_a_database.html#defining-a-context "定义上下文(Defining a Context)"
+[对象关系映射]: https://mhsnet.github.io/mhsstudynotes/framework/aqueduct/tutorial/reading_from_a_database.html#object-relational-mapping "对象关系映射(Object-Relational Mapping)"
+[建立数据模型]: https://mhsnet.github.io/mhsstudynotes/framework/aqueduct/tutorial/reading_from_a_database.html#building-a-data-model "建立数据模型(Building a Data Model)"
+[定义上下文]: https://mhsnet.github.io/mhsstudynotes/framework/aqueduct/tutorial/reading_from_a_database.html#defining-a-context "定义上下文(Defining a Context)"

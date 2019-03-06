@@ -14,9 +14,9 @@ app.[get|post|put|delete]('/', function (req, res) {
 ## <span id="route-paths">路由路径</span> [路由]
 
 ##
-[《MHS 学习笔记》]: https://mhsnet.github.io/note/ "《MHS 学习笔记》"
-[《Express 学习》]: https://mhsnet.github.io/note/node/express/index.html "《Express 学习》"
+[《MHS 学习笔记》]: https://mhsnet.github.io/mhsstudynotes/ "《MHS 学习笔记》"
+[《Express 学习》]: https://mhsnet.github.io/mhsstudynotes/node/express/index.html "《Express 学习》"
 
-[yargs]: https://mhsnet.github.io/note/node/express/tools/yargs.html "yargs"
-[路由方法]: https://mhsnet.github.io/note/node/express/guide/routing.html#route-methods "路由方法"
-[路由路径]: https://mhsnet.github.io/note/node/express/guide/routing.html#route-paths "路由路径")
+[yargs]: https://mhsnet.github.io/mhsstudynotes/node/express/tools/yargs.html "yargs"
+[路由方法]: https://mhsnet.github.io/mhsstudynotes/node/express/guide/routing.html#route-methods "路由方法"
+[路由路径]: https://mhsnet.github.io/mhsstudynotes/node/express/guide/routing.html#route-paths "路由路径")

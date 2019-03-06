@@ -385,16 +385,16 @@ blockquote {
 
 </head>
 <body>
-<h1 id="%E8%B7%AF%E7%94%B1-%E3%80%8Amhs-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%8B---%E3%80%8Aexpress-%E5%AD%A6%E4%B9%A0%E3%80%8B-mhs201934">路由 <a href="https://mhsnet.github.io/note/" title="《MHS 学习笔记》">《MHS 学习笔记》</a> -&gt; <a href="https://mhsnet.github.io/note/node/express/index.html" title="《Express 学习》">《Express 学习》</a> (mhs2019.3.4)</h1>
+<h1 id="%E8%B7%AF%E7%94%B1-%E3%80%8Amhs-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%8B---%E3%80%8Aexpress-%E5%AD%A6%E4%B9%A0%E3%80%8B-mhs201934">路由 <a href="https://mhsnet.github.io/mhsstudynotes/" title="《MHS 学习笔记》">《MHS 学习笔记》</a> -&gt; <a href="https://mhsnet.github.io/mhsstudynotes/node/express/index.html" title="《Express 学习》">《Express 学习》</a> (mhs2019.3.4)</h1>
 <ul>
-<li><a href="https://mhsnet.github.io/note/node/express/guide/routing.html#route-methods" title="路由方法">路由方法</a></li>
-<li><a href="https://mhsnet.github.io/note/node/express/guide/routing.html#route-paths" title="路由路径">路由路径</a></li>
-<li><a href="https://mhsnet.github.io/note/node/express/guide/routing.html#route-handlers" title="Route处理">Route处理</a></li>
-<li><a href="https://mhsnet.github.io/note/node/express/guide/routing.html#response-methods" title="Response方法">Response方法</a></li>
-<li><a href="https://mhsnet.github.io/note/node/express/guide/routing.html#app-route" title="app.route()">app.route()</a></li>
-<li><a href="https://mhsnet.github.io/note/node/express/guide/routing.html#express-router" title="express.Router">express.Router</a></li>
+<li><a href="https://mhsnet.github.io/mhsstudynotes/node/express/guide/routing.html#route-methods" title="路由方法">路由方法</a></li>
+<li><a href="https://mhsnet.github.io/mhsstudynotes/node/express/guide/routing.html#route-paths" title="路由路径">路由路径</a></li>
+<li><a href="https://mhsnet.github.io/mhsstudynotes/node/express/guide/routing.html#route-handlers" title="Route处理">Route处理</a></li>
+<li><a href="https://mhsnet.github.io/mhsstudynotes/node/express/guide/routing.html#response-methods" title="Response方法">Response方法</a></li>
+<li><a href="https://mhsnet.github.io/mhsstudynotes/node/express/guide/routing.html#app-route" title="app.route()">app.route()</a></li>
+<li><a href="https://mhsnet.github.io/mhsstudynotes/node/express/guide/routing.html#express-router" title="express.Router">express.Router</a></li>
 </ul>
-<h2 id="span-idroute-methods%E8%B7%AF%E7%94%B1%E6%96%B9%E6%B3%95span-%E8%B7%AF%E7%94%B1"><span id="route-methods">路由方法</span> <a href="https://mhsnet.github.io/note/node/express/guide/routing.html" title="路由">路由</a></h2>
+<h2 id="span-idroute-methods%E8%B7%AF%E7%94%B1%E6%96%B9%E6%B3%95span-%E8%B7%AF%E7%94%B1"><span id="route-methods">路由方法</span> <a href="https://mhsnet.github.io/mhsstudynotes/node/express/guide/routing.html" title="路由">路由</a></h2>
 <blockquote>
 <p>Express支持所有HTTP请求方法(get,post,put,delete...)。</p>
 </blockquote>
@@ -402,13 +402,13 @@ blockquote {
   res.send('get|post|put|delete')
 })
 </div></code></pre>
-<h2 id="span-idroute-paths%E8%B7%AF%E7%94%B1%E8%B7%AF%E5%BE%84span-%E8%B7%AF%E7%94%B1"><span id="route-paths">路由路径</span> <a href="https://mhsnet.github.io/note/node/express/guide/routing.html" title="路由">路由</a></h2>
+<h2 id="span-idroute-paths%E8%B7%AF%E7%94%B1%E8%B7%AF%E5%BE%84span-%E8%B7%AF%E7%94%B1"><span id="route-paths">路由路径</span> <a href="https://mhsnet.github.io/mhsstudynotes/node/express/guide/routing.html" title="路由">路由</a></h2>
 <pre class="hljs"><code><div>app.get('/', function (req, res) {
   res.send('root')
 })
 
 </div></code></pre>
-<h2 id="span-idroute-handlersroute%E5%A4%84%E7%90%86span-%E8%B7%AF%E7%94%B1"><span id="route-handlers">Route处理</span> <a href="https://mhsnet.github.io/note/node/express/guide/routing.html" title="路由">路由</a></h2>
+<h2 id="span-idroute-handlersroute%E5%A4%84%E7%90%86span-%E8%B7%AF%E7%94%B1"><span id="route-handlers">Route处理</span> <a href="https://mhsnet.github.io/mhsstudynotes/node/express/guide/routing.html" title="路由">路由</a></h2>
 <blockquote>
 <p>可提供多个回调，类似中间件除了可能调用next(“route”)来绕过剩余回调</p>
 </blockquote>
@@ -432,8 +432,8 @@ router.route('/hello')
   .get([cb1])
   .post([cb2])
 </div></code></pre>
-<h2 id="span-idresponse-methodsresponse%E6%96%B9%E6%B3%95span-%E8%B7%AF%E7%94%B1"><span id="response-methods">Response方法</span> <a href="https://mhsnet.github.io/note/node/express/guide/routing.html" title="路由">路由</a></h2>
-<h2 id="span-idapp-routeapproutespan-%E8%B7%AF%E7%94%B1"><span id="app-route">app.route()</span> <a href="https://mhsnet.github.io/note/node/express/guide/routing.html" title="路由">路由</a></h2>
+<h2 id="span-idresponse-methodsresponse%E6%96%B9%E6%B3%95span-%E8%B7%AF%E7%94%B1"><span id="response-methods">Response方法</span> <a href="https://mhsnet.github.io/mhsstudynotes/node/express/guide/routing.html" title="路由">路由</a></h2>
+<h2 id="span-idapp-routeapproutespan-%E8%B7%AF%E7%94%B1"><span id="app-route">app.route()</span> <a href="https://mhsnet.github.io/mhsstudynotes/node/express/guide/routing.html" title="路由">路由</a></h2>
 <blockquote>
 <p>app.route()返回单个路由实例，进行HTTP链式操作</p>
 </blockquote>
@@ -451,7 +451,7 @@ router.route('/hello')
     res.send('Hello Post')
   })
 </div></code></pre>
-<h2 id="span-idexpress-routerexpressrouterspan-%E8%B7%AF%E7%94%B1"><span id="express-router">express.Router</span> <a href="https://mhsnet.github.io/note/node/express/guide/routing.html" title="路由">路由</a></h2>
+<h2 id="span-idexpress-routerexpressrouterspan-%E8%B7%AF%E7%94%B1"><span id="express-router">express.Router</span> <a href="https://mhsnet.github.io/mhsstudynotes/node/express/guide/routing.html" title="路由">路由</a></h2>
 <blockquote>
 <p>express.Router(Class)创建模块化，可安装的路由程序(Instance) ，包含完整中间件和路由系统(mini_app)。</p>
 </blockquote>

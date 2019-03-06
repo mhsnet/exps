@@ -28,9 +28,9 @@ $ node hello.js
 ```
 
 ##
-[《MHS 学习笔记》]: https://mhsnet.github.io/note/ "《MHS 学习笔记》"
-[《Node 指南》]: https://mhsnet.github.io/note/node/guide/index.html "《Node 指南》"
-[开始(hello)]: https://mhsnet.github.io/note/node/guide/start/hello.html "开始(hello)"
+[《MHS 学习笔记》]: https://mhsnet.github.io/mhsstudynotes/ "《MHS 学习笔记》"
+[《Node 指南》]: https://mhsnet.github.io/mhsstudynotes/node/guide/index.html "《Node 指南》"
+[开始(hello)]: https://mhsnet.github.io/mhsstudynotes/node/guide/start/hello.html "开始(hello)"
 
-[hello代码]: https://mhsnet.github.io/note/node/guide/start/hello.html#code "hello代码"
-[hello运行]: https://mhsnet.github.io/note/node/guide/start/hello.html#run "hello运行"
+[hello代码]: https://mhsnet.github.io/mhsstudynotes/node/guide/start/hello.html#code "hello代码"
+[hello运行]: https://mhsnet.github.io/mhsstudynotes/node/guide/start/hello.html#run "hello运行"

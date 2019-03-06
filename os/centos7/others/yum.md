@@ -61,10 +61,10 @@
 > ```
 
 ##
-[《MHS 学习笔记》]: https://mhsnet.github.io/note/ "《MHS 学习笔记》"
-[《CentOS7》]: https://mhsnet.github.io/note/os/centos7/index.html "《CentOS7》"
-[YUM]: https://mhsnet.github.io/note/os/centos7/others/yum.html "YUM"
+[《MHS 学习笔记》]: https://mhsnet.github.io/mhsstudynotes/ "《MHS 学习笔记》"
+[《CentOS7》]: https://mhsnet.github.io/mhsstudynotes/os/centos7/index.html "《CentOS7》"
+[YUM]: https://mhsnet.github.io/mhsstudynotes/os/centos7/others/yum.html "YUM"
 
-[YUM指令]: https://mhsnet.github.io/note/os/centos7/others/yum.html#yum-cmd "YUM指令"
-[RPM]: https://mhsnet.github.io/note/os/centos7/others/yum.html#rpm "RPM"
-[YUM源]: https://mhsnet.github.io/note/os/centos7/others/yum.html#yum-repository "YUM源"
+[YUM指令]: https://mhsnet.github.io/mhsstudynotes/os/centos7/others/yum.html#yum-cmd "YUM指令"
+[RPM]: https://mhsnet.github.io/mhsstudynotes/os/centos7/others/yum.html#rpm "RPM"
+[YUM源]: https://mhsnet.github.io/mhsstudynotes/os/centos7/others/yum.html#yum-repository "YUM源"

@@ -96,13 +96,13 @@ class UsersController extends ResourceController {
 > 5. 应用程序中存储数据，更改数据只会在某个isolated中更改，再次请求不太可能看到更改—另一个具有不同数据的isolated可能处理该请求。
 
 ##
-[Home]: https://mhsnet.github.io/note/ "《MHS技术栈学习笔记》"
-[Aqueduct]: https://mhsnet.github.io/note/framework/aqueduct/index.html "《Aqueduct》"
-[Top]: https://mhsnet.github.io/note/framework/aqueduct/tutorial/getting_started.html "开始"
+[Home]: https://mhsnet.github.io/mhsstudynotes/ "《MHS技术栈学习笔记》"
+[Aqueduct]: https://mhsnet.github.io/mhsstudynotes/framework/aqueduct/index.html "《Aqueduct》"
+[Top]: https://mhsnet.github.io/mhsstudynotes/framework/aqueduct/tutorial/getting_started.html "开始"
 
-[安装]: https://mhsnet.github.io/note/framework/aqueduct/tutorial/getting_started.html#installation "安装(Installation)"
-[创建项目]: https://mhsnet.github.io/note/framework/aqueduct/tutorial/getting_started.html#creating-project "创建项目(Creating a Project)"
-[链接控制器]: https://mhsnet.github.io/note/framework/aqueduct/tutorial/getting_started.html#linking-controllers "链接控制器(Linking Controllers)"
-[高级路由]: https://mhsnet.github.io/note/framework/aqueduct/tutorial/getting_started.html#advanced-routing "高级路由(Advanced Routing)"
-[资源控制器]: https://mhsnet.github.io/note/framework/aqueduct/tutorial/getting_started.html#resource-controllers  "资源控制器(ResourceControllers)"
-[多线程和应用程序状态]: https://mhsnet.github.io/note/framework/aqueduct/tutorial/getting_started.html#multi-threading-and-application-state  "多线程和应用程序状态(Multi-threading and Application State)"
+[安装]: https://mhsnet.github.io/mhsstudynotes/framework/aqueduct/tutorial/getting_started.html#installation "安装(Installation)"
+[创建项目]: https://mhsnet.github.io/mhsstudynotes/framework/aqueduct/tutorial/getting_started.html#creating-project "创建项目(Creating a Project)"
+[链接控制器]: https://mhsnet.github.io/mhsstudynotes/framework/aqueduct/tutorial/getting_started.html#linking-controllers "链接控制器(Linking Controllers)"
+[高级路由]: https://mhsnet.github.io/mhsstudynotes/framework/aqueduct/tutorial/getting_started.html#advanced-routing "高级路由(Advanced Routing)"
+[资源控制器]: https://mhsnet.github.io/mhsstudynotes/framework/aqueduct/tutorial/getting_started.html#resource-controllers  "资源控制器(ResourceControllers)"
+[多线程和应用程序状态]: https://mhsnet.github.io/mhsstudynotes/framework/aqueduct/tutorial/getting_started.html#multi-threading-and-application-state  "多线程和应用程序状态(Multi-threading and Application State)"

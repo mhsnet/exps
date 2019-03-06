@@ -385,23 +385,23 @@ blockquote {
 
 </head>
 <body>
-<h1 id="%E5%BC%80%E5%A7%8B-home-aqueduct-mhs2019221">开始 <a href="https://mhsnet.github.io/note/" title="《MHS技术栈学习笔记》">Home</a> <a href="https://mhsnet.github.io/note/framework/aqueduct/index.html" title="《Aqueduct》">Aqueduct</a> (mhs2019.2.21)</h1>
+<h1 id="%E5%BC%80%E5%A7%8B-home-aqueduct-mhs2019221">开始 <a href="https://mhsnet.github.io/mhsstudynotes/" title="《MHS技术栈学习笔记》">Home</a> <a href="https://mhsnet.github.io/mhsstudynotes/framework/aqueduct/index.html" title="《Aqueduct》">Aqueduct</a> (mhs2019.2.21)</h1>
 <ul>
-<li><a href="https://mhsnet.github.io/note/framework/aqueduct/tutorial/getting_started.html#installation" title="安装(Installation)">安装</a></li>
-<li><a href="https://mhsnet.github.io/note/framework/aqueduct/tutorial/getting_started.html#creating-project" title="创建项目(Creating a Project)">创建项目</a></li>
-<li><a href="https://mhsnet.github.io/note/framework/aqueduct/tutorial/getting_started.html#linking-controllers" title="链接控制器(Linking Controllers)">链接控制器</a></li>
-<li><a href="https://mhsnet.github.io/note/framework/aqueduct/tutorial/getting_started.html#advanced-routing" title="高级路由(Advanced Routing)">高级路由</a></li>
-<li><a href="https://mhsnet.github.io/note/framework/aqueduct/tutorial/getting_started.html#resource-controllers" title="资源控制器(ResourceControllers)">资源控制器</a></li>
-<li><a href="https://mhsnet.github.io/note/framework/aqueduct/tutorial/getting_started.html#multi-threading-and-application-state" title="多线程和应用程序状态(Multi-threading and Application State)">多线程和应用程序状态</a></li>
+<li><a href="https://mhsnet.github.io/mhsstudynotes/framework/aqueduct/tutorial/getting_started.html#installation" title="安装(Installation)">安装</a></li>
+<li><a href="https://mhsnet.github.io/mhsstudynotes/framework/aqueduct/tutorial/getting_started.html#creating-project" title="创建项目(Creating a Project)">创建项目</a></li>
+<li><a href="https://mhsnet.github.io/mhsstudynotes/framework/aqueduct/tutorial/getting_started.html#linking-controllers" title="链接控制器(Linking Controllers)">链接控制器</a></li>
+<li><a href="https://mhsnet.github.io/mhsstudynotes/framework/aqueduct/tutorial/getting_started.html#advanced-routing" title="高级路由(Advanced Routing)">高级路由</a></li>
+<li><a href="https://mhsnet.github.io/mhsstudynotes/framework/aqueduct/tutorial/getting_started.html#resource-controllers" title="资源控制器(ResourceControllers)">资源控制器</a></li>
+<li><a href="https://mhsnet.github.io/mhsstudynotes/framework/aqueduct/tutorial/getting_started.html#multi-threading-and-application-state" title="多线程和应用程序状态(Multi-threading and Application State)">多线程和应用程序状态</a></li>
 </ul>
-<h2 id="span-idinstallation%E5%AE%89%E8%A3%85span-top"><span id="installation">安装</span> <a href="https://mhsnet.github.io/note/framework/aqueduct/tutorial/getting_started.html" title="开始">Top</a></h2>
+<h2 id="span-idinstallation%E5%AE%89%E8%A3%85span-top"><span id="installation">安装</span> <a href="https://mhsnet.github.io/mhsstudynotes/framework/aqueduct/tutorial/getting_started.html" title="开始">Top</a></h2>
 <pre class="hljs"><code><div>$ pub global activate aqueduct --- 安装Aqueduct命令行工具
 </div></code></pre>
-<h2 id="span-idcreating-project%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AEspan-top"><span id="creating-project">创建项目</span> <a href="https://mhsnet.github.io/note/framework/aqueduct/tutorial/getting_started.html" title="开始">Top</a></h2>
+<h2 id="span-idcreating-project%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AEspan-top"><span id="creating-project">创建项目</span> <a href="https://mhsnet.github.io/mhsstudynotes/framework/aqueduct/tutorial/getting_started.html" title="开始">Top</a></h2>
 <pre class="hljs"><code><div>$ aqueduct create dart_study_server --- 创建Aqueduct项目
 $ aqueduct serve --- 启动项目
 </div></code></pre>
-<h2 id="span-idlinking-controllers%E9%93%BE%E6%8E%A5%E6%8E%A7%E5%88%B6%E5%99%A8linking-controllersspan-top"><span id="linking-controllers">链接控制器(Linking Controllers)</span> <a href="https://mhsnet.github.io/note/framework/aqueduct/tutorial/getting_started.html" title="开始">Top</a></h2>
+<h2 id="span-idlinking-controllers%E9%93%BE%E6%8E%A5%E6%8E%A7%E5%88%B6%E5%99%A8linking-controllersspan-top"><span id="linking-controllers">链接控制器(Linking Controllers)</span> <a href="https://mhsnet.github.io/mhsstudynotes/framework/aqueduct/tutorial/getting_started.html" title="开始">Top</a></h2>
 <pre class="hljs"><code><div>@override
 Controller get entryPoint {
   final router = Router();
@@ -433,7 +433,7 @@ Controller get entryPoint {
 <blockquote>
 <p>通道可有0或多个中间件控制器，以终点控制器结束。大多控制器只能有一个链接控制器，但路由可有多个。</p>
 </blockquote>
-<h2 id="span-idadvanced-routing%E9%AB%98%E7%BA%A7%E8%B7%AF%E7%94%B1advanced-routingspan-top"><span id="advanced-routing">高级路由(Advanced Routing)</span> <a href="https://mhsnet.github.io/note/framework/aqueduct/tutorial/getting_started.html" title="开始">Top</a></h2>
+<h2 id="span-idadvanced-routing%E9%AB%98%E7%BA%A7%E8%B7%AF%E7%94%B1advanced-routingspan-top"><span id="advanced-routing">高级路由(Advanced Routing)</span> <a href="https://mhsnet.github.io/mhsstudynotes/framework/aqueduct/tutorial/getting_started.html" title="开始">Top</a></h2>
 <blockquote>
 <ol>
 <li>/:xxx --- 路径变量</li>
@@ -444,7 +444,7 @@ Controller get entryPoint {
   .route('/users/[:id]')
   .link(() =&gt; UsersController());
 </div></code></pre>
-<h2 id="span-idresource-controllers%E8%B5%84%E6%BA%90%E6%8E%A7%E5%88%B6%E5%99%A8resourcecontrollersspan-top"><span id="resource-controllers">资源控制器(ResourceControllers)</span> <a href="https://mhsnet.github.io/note/framework/aqueduct/tutorial/getting_started.html" title="开始">Top</a></h2>
+<h2 id="span-idresource-controllers%E8%B5%84%E6%BA%90%E6%8E%A7%E5%88%B6%E5%99%A8resourcecontrollersspan-top"><span id="resource-controllers">资源控制器(ResourceControllers)</span> <a href="https://mhsnet.github.io/mhsstudynotes/framework/aqueduct/tutorial/getting_started.html" title="开始">Top</a></h2>
 <blockquote>
 <p>例（lib/controller/users_controller.dart）：</p>
 </blockquote>
@@ -480,7 +480,7 @@ class UsersController extends ResourceController {
 <blockquote>
 <p>可以绑定路径变量(path variables)、头(headers)、查询参数(query parameters)和主体(bodies)。绑定路径变量时，我们必须用参数指定哪个路径变量为@Bind.path(pathvariablename)</p>
 </blockquote>
-<h2 id="span-idmulti-threading-and-application-state%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%92%8C%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E7%8A%B6%E6%80%81multi-threading-and-application-statespan-top"><span id="multi-threading-and-application-state">多线程和应用程序状态(Multi-threading and Application State)</span> <a href="https://mhsnet.github.io/note/framework/aqueduct/tutorial/getting_started.html" title="开始">Top</a></h2>
+<h2 id="span-idmulti-threading-and-application-state%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%92%8C%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E7%8A%B6%E6%80%81multi-threading-and-application-statespan-top"><span id="multi-threading-and-application-state">多线程和应用程序状态(Multi-threading and Application State)</span> <a href="https://mhsnet.github.io/mhsstudynotes/framework/aqueduct/tutorial/getting_started.html" title="开始">Top</a></h2>
 <blockquote>
 <ol>
 <li>将数据存数据库，使程序重启时不丢失。</li>
