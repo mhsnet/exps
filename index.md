@@ -4,6 +4,9 @@
 - [《Express 学习》]
 - [《Node 指南》]
 
+## Vue
+- [《Vue CLI》]
+
 ## 工具
 - [《npm CLI》]
 
@@ -33,6 +36,8 @@
 
 [《Express 学习》]: https://mhsnet.github.io/mhsstudynotes/node/express/index.html "《Express 学习》"
 [《Node 指南》]: https://mhsnet.github.io/mhsstudynotes/node/guide/index.html "《Node 指南》"
+
+[《Vue CLI》]: https://mhsnet.github.io/mhsstudynotes/vue/cli/index.html "《Vue CLI》"
 
 [《npm CLI》]: https://mhsnet.github.io/mhsstudynotes/tools/npm/cli/index.html "《npm CLI》"
 

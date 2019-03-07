@@ -1,10 +1,10 @@
-# 《Vue CLI》 [《MHS 学习笔记》] (mhs2019.3.6)
+# 安装 [《MHS 学习笔记》] -> [《Vue CLI》] (mhs2019.3.7)
 
-- 指南(guide)
-  - 基础
-    - [安装]
-  
-
+```
+$ npm i -g @vue/cli
+$ vue -h
+$ vue -V
+```
 
 ##
 [《MHS 学习笔记》]: https://mhsnet.github.io/mhsstudynotes/ "《MHS 学习笔记》"
