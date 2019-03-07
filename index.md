@@ -34,7 +34,7 @@
 [《Express 学习》]: https://mhsnet.github.io/mhsstudynotes/node/express/index.html "《Express 学习》"
 [《Node 指南》]: https://mhsnet.github.io/mhsstudynotes/node/guide/index.html "《Node 指南》"
 
-[《npm CLI》]: https://mhsnet.github.io/mhsstudynotes/tool/npm/cli/index.html "《npm CLI》"
+[《npm CLI》]: https://mhsnet.github.io/mhsstudynotes/tools/npm/cli/index.html "《npm CLI》"
 
 [Aqueduct]: https://mhsnet.github.io/mhsstudynotes/framework/aqueduct/index.html "《Aqueduct》"
 

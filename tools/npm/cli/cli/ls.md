@@ -14,6 +14,6 @@ $ --link --- [Type: Boolean|Default: false] 仅link
 
 ##
 [《MHS 学习笔记》]: https://mhsnet.github.io/mhsstudynotes/ "《MHS 学习笔记》"
-[《npm CLI》]: https://mhsnet.github.io/mhsstudynotes/tool/npm/cli/index.html "《npm CLI》"
+[《npm CLI》]: https://mhsnet.github.io/mhsstudynotes/tools/npm/cli/index.html "《npm CLI》"
 
-[ls]: https://mhsnet.github.io/mhsstudynotes/tool/npm/cli/cli/ls.html "ls"
+[ls]: https://mhsnet.github.io/mhsstudynotes/tools/npm/cli/cli/ls.html "ls"
