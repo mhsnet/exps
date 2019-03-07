@@ -4,6 +4,9 @@
 - [《Express 学习》]
 - [《Node 指南》]
 
+## 工具
+- [《npm CLI》]
+
 ## <span>框架</span>
 1. [Aqueduct] - Dart框架
 
@@ -31,6 +34,8 @@
 [《Express 学习》]: https://mhsnet.github.io/mhsstudynotes/node/express/index.html "《Express 学习》"
 [《Node 指南》]: https://mhsnet.github.io/mhsstudynotes/node/guide/index.html "《Node 指南》"
 
+[《npm CLI》]: https://mhsnet.github.io/mhsstudynotes/tool/npm/cli/index.html "《npm CLI》"
+
 [Aqueduct]: https://mhsnet.github.io/mhsstudynotes/framework/aqueduct/index.html "《Aqueduct》"
 
 [PostgreSQL 笔记]: https://mhsnet.github.io/mhsstudynotes/database/postgresql_note.html "《PostgreSQL 笔记》"
@@ -47,4 +52,4 @@
 [os_centos_ius]: https://mhsnet.github.io/mhsstudynotes/os/centos/ius.html "ius"
 [os_centos_php]: https://mhsnet.github.io/mhsstudynotes/os/centos/php.html "php"
 [os_centos_rpm]: https://mhsnet.github.io/mhsstudynotes/os/centos/rpm.html "rpm"
-[os_centos_yum]: https://mhsnet.github.io/mhsstudynotes/os/centos/yum.html "yum")
+[os_centos_yum]: https://mhsnet.github.io/mhsstudynotes/os/centos/yum.html "yum"
