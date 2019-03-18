@@ -1,8 +1,9 @@
-# 安装 [《MHS 学习笔记》] -> [《Vue CLI》] (mhs2019.3.7)
+# 安装 [《MHS 学习笔记》] -> [《Vue CLI》] (mhs2019.3.18)
 
+## 安装@vue/cli
 ```
-$ npm i -g @vue/cli
-$ vue -h
+$ sudo yarn global add @vue/cli
+$ vi vue.cmd --- F:\GScoopApps\apps\yarn\current\bin[@"C:\uSERS\....\vue.cmd" %*]
 $ vue -V
 ```
 
