@@ -8,6 +8,10 @@
 - [《Vue CLI》]
 
 ## 工具
+- 前端测试
+  - [《Cypress 笔记》]
+  - Jest
+  - Puppeteer
 - [《npm CLI》]
 
 ## <span>框架</span>
@@ -39,6 +43,7 @@
 
 [《Vue CLI》]: https://mhsnet.github.io/mhsstudynotes/vue/cli/index.html "《Vue CLI》"
 
+[《Cypress 笔记》]: https://mhsnet.github.io/mhsstudynotes/tools/test/cypress/index.html "《Cypress 笔记》"
 [《npm CLI》]: https://mhsnet.github.io/mhsstudynotes/tools/npm/cli/index.html "《npm CLI》"
 
 [Aqueduct]: https://mhsnet.github.io/mhsstudynotes/framework/aqueduct/index.html "《Aqueduct》"
