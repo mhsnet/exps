@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>index.md</title>
+<title>handbook.md</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 
 <style>
@@ -385,63 +385,31 @@ blockquote {
 
 </head>
 <body>
-<h1 id="%E3%80%8Amhs-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%8B">《MHS 学习笔记》</h1>
-<h2 id="%E7%9B%AE%E6%A0%87%E6%9E%B6%E6%9E%84">目标架构</h2>
-<p>LVS + keepalived + nginx + [node前|&lt;--&gt;|node前] + (apache+php+eaccelerator|node后|...) + nfs + redis + mysql</p>
-<h2 id="node">Node</h2>
-<ul>
-<li><a href="https://mhsnet.github.io/mhsstudynotes/node/express/index.html" title="《Express 学习》">《Express 学习》</a></li>
-<li><a href="https://mhsnet.github.io/mhsstudynotes/node/guide/index.html" title="《Node 指南》">《Node 指南》</a></li>
-</ul>
-<h2 id="vue">Vue</h2>
-<ul>
-<li><a href="https://mhsnet.github.io/mhsstudynotes/vue/cli/index.html" title="《Vue CLI》">《Vue CLI》</a></li>
-</ul>
-<h2 id="%E5%B7%A5%E5%85%B7">工具</h2>
-<ul>
-<li>前端测试
-<ul>
-<li><a href="https://mhsnet.github.io/mhsstudynotes/tools/test/cypress/index.html" title="《Cypress 笔记》">《Cypress 笔记》</a></li>
-<li>Jest</li>
-<li>Puppeteer</li>
-</ul>
-</li>
-<li>包管理
-<ul>
-<li><a href="https://mhsnet.github.io/mhsstudynotes/tools/pkg-adm/npm/handbook.html" title="《npm 手册》">《npm 手册》</a></li>
-<li>rpm</li>
-<li>yarn</li>
-<li>yum</li>
-</ul>
-</li>
-<li><a href="https://mhsnet.github.io/mhsstudynotes/tools/npm/cli/index.html" title="《npm CLI》">《npm CLI》</a></li>
-</ul>
-<h2 id="span%E6%A1%86%E6%9E%B6span"><span>框架</span></h2>
-<ol>
-<li><a href="https://mhsnet.github.io/mhsstudynotes/framework/aqueduct/index.html" title="《Aqueduct》">Aqueduct</a> - Dart框架</li>
-</ol>
-<h2 id="span%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9F%A5%E8%AF%86span"><span>数据库知识</span></h2>
-<ol>
-<li><a href="https://mhsnet.github.io/mhsstudynotes/database/postgresql_note.html" title="《PostgreSQL 笔记》">PostgreSQL 笔记</a></li>
-</ol>
-<h2 id="span-idcom-tools%E9%80%9A%E7%94%A8%E5%B7%A5%E5%85%B7spanhome"><span id="com-tools">通用工具</span>[Home]</h2>
-<ul>
-<li><a href="https://mhsnet.github.io/mhsstudynotes/tools/git.html" title="《Git 使用》">Git 使用</a></li>
-<li><a href="https://mhsnet.github.io/mhsstudynotes/tools/markdown.html" title="《Markdown 语法》">Markdown 语法</a></li>
-<li>[Uml 使用]</li>
-</ul>
-<h2 id="span-idos%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9Fspanhome"><span id="os">操作系统</span>[Home]</h2>
-<ul>
-<li><a href="https://mhsnet.github.io/mhsstudynotes/os/centos7/index.html" title="《CentOS7》">《CentOS7》</a></li>
-<li><span id="centos">CentOS</span>
-<ol>
-<li><a href="https://mhsnet.github.io/mhsstudynotes/os/centos/ius.html" title="ius">os_centos_ius</a></li>
-<li><a href="https://mhsnet.github.io/mhsstudynotes/os/centos/php.html" title="php">os_centos_php</a></li>
-<li><a href="https://mhsnet.github.io/mhsstudynotes/os/centos/rpm.html" title="rpm">os_centos_rpm</a></li>
-<li><a href="https://mhsnet.github.io/mhsstudynotes/os/centos/yum.html" title="yum">os_centos_yum</a></li>
-</ol>
-</li>
-</ul>
+<h1 id="%E3%80%8Anpm-%E6%89%8B%E5%86%8C%E3%80%8B-%E3%80%8Amhs-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%8B-mhs2019318">《npm 手册》 <a href="https://mhsnet.github.io/mhsstudynotes/" title="《MHS 学习笔记》">《MHS 学习笔记》</a> (mhs2019.3.18)</h1>
+<h2 id="%E5%AE%89%E8%A3%85">安装</h2>
+<blockquote>
+<p>Nodejs安装(win7)</p>
+</blockquote>
+<pre class="hljs"><code><div>&gt; D:\software\nodejs --- Node安装路径
+$ npm config set prefix &quot;F:\Software\npm\global&quot; --- 默认(%AppData%\npm)
+$ npm config set cache &quot;F:\Software\npm\cache&quot; --- 默认(%AppData%/npm-cache)
+$ &gt; F:\Software\npm\global 和 F:\Software\npm\global\node_modules --- 添加到环境变量
+</div></code></pre>
+<h2 id="%E4%BD%BF%E7%94%A8">使用</h2>
+<blockquote>
+<p>npm config</p>
+</blockquote>
+<pre class="hljs"><code><div>npm c delete &lt;key&gt; --- 所有配置文件删除key
+npm c edit [-g] --- 打开配置文件，-g全局配置文件
+npm c get &lt;key&gt; --- 获取配置值
+npm c list [-l] [--json] --- 查看配置，-l默认配置，--json格式
+npm c set &lt;key&gt; &lt;value&gt; [-g] --- 设置配置值，-g全局配置
+</div></code></pre>
+<blockquote>
+<p>npm help</p>
+</blockquote>
+<pre class="hljs"><code><div>npm help --- 帮助
+</div></code></pre>
 <h2 id=""></h2>
 
 </body>
