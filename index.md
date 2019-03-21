@@ -1,7 +1,7 @@
 # 《MHS 学习笔记》
 
 ## 目标架构
-LVS + keepalived + nginx + node前 + (apache+php+eaccelerator|node后) + nfs + redis + mysql
+LVS + keepalived + nginx + [node前|<-->|node前] + (apache+php+eaccelerator|node后) + nfs + redis + mysql
 
 ## Node
 - [《Express 学习》]
