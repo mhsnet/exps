@@ -1,5 +1,8 @@
 # 《MHS 学习笔记》
 
+## 目标架构
+LVS + keepalived + nginx + [node前|<-->|node前] + (apache+php+eaccelerator|node后|...) + nfs + redis + mysql
+
 ## Node
 - [《Express 学习》]
 - [《Node 指南》]
@@ -9,9 +12,14 @@
 
 ## 工具
 - 前端测试
+  - [《Cypress 笔记》]
   - Jest
-  - Cypress
   - Puppeteer
+- 包管理
+  - [《npm 手册》]
+  - rpm
+  - [《yarn 手册》]
+  - yum
 - [《npm CLI》]
 
 ## <span>框架</span>
@@ -43,6 +51,9 @@
 
 [《Vue CLI》]: https://mhsnet.github.io/mhsstudynotes/vue/cli/index.html "《Vue CLI》"
 
+[《Cypress 笔记》]: https://mhsnet.github.io/mhsstudynotes/tools/test/cypress/index.html "《Cypress 笔记》"
+[《npm 手册》]: https://mhsnet.github.io/mhsstudynotes/tools/pkg-adm/npm/handbook.html "《npm 手册》"
+[《yarn 手册》]: https://mhsnet.github.io/mhsstudynotes/tools/pkg-adm/yarn/handbook.html "《yarn 手册》"
 [《npm CLI》]: https://mhsnet.github.io/mhsstudynotes/tools/npm/cli/index.html "《npm CLI》"
 
 [Aqueduct]: https://mhsnet.github.io/mhsstudynotes/framework/aqueduct/index.html "《Aqueduct》"

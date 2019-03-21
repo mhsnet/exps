@@ -18,7 +18,7 @@ LVS + keepalived + nginx + [node前|<-->|node前] + (apache+php+eaccelerator|nod
 - 包管理
   - [《npm 手册》]
   - rpm
-  - yarn
+  - [《yarn 手册》]
   - yum
 - [《npm CLI》]
 
@@ -53,6 +53,7 @@ LVS + keepalived + nginx + [node前|<-->|node前] + (apache+php+eaccelerator|nod
 
 [《Cypress 笔记》]: https://mhsnet.github.io/mhsstudynotes/tools/test/cypress/index.html "《Cypress 笔记》"
 [《npm 手册》]: https://mhsnet.github.io/mhsstudynotes/tools/pkg-adm/npm/handbook.html "《npm 手册》"
+[《yarn 手册》]: https://mhsnet.github.io/mhsstudynotes/tools/pkg-adm/yarn/handbook.html "《yarn 手册》"
 [《npm CLI》]: https://mhsnet.github.io/mhsstudynotes/tools/npm/cli/index.html "《npm CLI》"
 
 [Aqueduct]: https://mhsnet.github.io/mhsstudynotes/framework/aqueduct/index.html "《Aqueduct》"
