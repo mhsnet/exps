@@ -1,6 +1,12 @@
 # 安装 [《MHS 学习笔记》] -> [《Vue CLI》] (mhs2019.3.18)
 
 ## 安装@vue/cli
+> 环境安装
+```
+$ D:\software\nodejs --- Node安装路径
+$ D:\software\Yarn --- Yarn安装路径
+
+```
 > 安装CLI插件
 ```
 $ sudo yarn global add @vue/cli

@@ -1,5 +1,8 @@
 # 《MHS 学习笔记》
 
+## 目标架构
+LVS + keepalived + nginx + node前 + (apache+php+eaccelerator|node后) + nfs + redis + mysql
+
 ## Node
 - [《Express 学习》]
 - [《Node 指南》]
@@ -12,6 +15,11 @@
   - [《Cypress 笔记》]
   - Jest
   - Puppeteer
+- 包管理
+  - npm
+  - yarn
+  - yum
+  - rpm
 - [《npm CLI》]
 
 ## <span>框架</span>
