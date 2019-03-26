@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>index.md</title>
+<title>start.md</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 
 <style>
@@ -385,14 +385,66 @@ blockquote {
 
 </head>
 <body>
-<h1 id="%E3%80%8Atypescript-%E7%AC%94%E8%AE%B0%E3%80%8B-%E3%80%8Amhs-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%8B-mhs2019326">《TypeScript 笔记》 <a href="https://mhsnet.github.io/mhsstudynotes/" title="《MHS 学习笔记》">《MHS 学习笔记》</a> (mhs2019.3.26)</h1>
+<h1 id="%E3%80%8Amhs-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%8B-%E3%80%8Atypescript-%E7%AC%94%E8%AE%B0%E3%80%8B-%E5%BC%80%E5%A7%8B-mhs2019326"><a href="https://mhsnet.github.io/mhsstudynotes/" title="《MHS 学习笔记》">《MHS 学习笔记》</a> &gt; <a href="https://mhsnet.github.io/mhsstudynotes/tools/base/typescript/index.html" title="《TypeScript 笔记》">《TypeScript 笔记》</a> &gt; 开始 (mhs2019.3.26)</h1>
 <ul>
-<li>教程
-<ul>
-<li><a href="https://mhsnet.github.io/mhsstudynotes/tools/base/typescript/start.html" title="开始">开始</a></li>
+<li><a href="https://mhsnet.github.io/mhsstudynotes/tools/base/typescript/start.html#install" title="安装TypeScript">安装TypeScript</a></li>
+<li><a href="https://mhsnet.github.io/mhsstudynotes/tools/base/typescript/start.html#ts-file" title="ts文件">ts文件</a></li>
+<li><a href="https://mhsnet.github.io/mhsstudynotes/tools/base/typescript/start.html#web-run" title="Web运行">Web运行</a></li>
 </ul>
-</li>
-</ul>
+<h2 id="span-idinstall%E5%AE%89%E8%A3%85typescriptspan"><span id="install">安装TypeScript</span></h2>
+<pre class="hljs"><code><div>$ yarn global list --depth=0
+$ yarn global add typescript
+</div></code></pre>
+<h2 id="span-idts-filets%E6%96%87%E4%BB%B6span"><span id="ts-file">ts文件</span></h2>
+<blockquote>
+<p>www_test/ts/hello.ts</p>
+</blockquote>
+<pre class="hljs"><code><div>// 类
+// public --- 创建同名成员变量
+class Student {
+  name: string;
+
+  constructor(name: string, public age: number) {
+    this.name = name;
+  }
+}
+
+// 接口
+interface Person {
+  name: string;
+}
+
+// 注解
+function hello(person: Person) {
+  return `Hello ${person.name}!`;
+}
+
+let user = new Student('stdN1', 13);
+
+document.body.innerHTML = hello(user);
+</div></code></pre>
+<blockquote>
+<p>编译代码</p>
+</blockquote>
+<pre class="hljs"><code><div>$ tsc hello.ts
+</div></code></pre>
+<h2 id="span-idweb-runweb%E8%BF%90%E8%A1%8Cspan"><span id="web-run">Web运行</span></h2>
+<blockquote>
+<p>www_test/ts/hello.html</p>
+</blockquote>
+<pre class="hljs"><code><div>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+  &lt;title&gt;TypeScript Hello&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;script src=&quot;hello.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+</div></code></pre>
 <h2 id=""></h2>
 
 </body>
