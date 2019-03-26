@@ -12,7 +12,7 @@ LVS + keepalived + nginx + [node前|<-->|node前] + (apache+php+eaccelerator|nod
 
 ## 工具
 - 基础
-  - [《TypeScript》]
+  - [《TypeScript 笔记》]
 - 前端测试
   - [《Cypress 笔记》]
   - Jest
