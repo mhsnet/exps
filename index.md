@@ -57,7 +57,7 @@ LVS + keepalived + nginx + [node前|<-->|node前] + (apache+php+eaccelerator|nod
 
 [《TypeScript 笔记》]: https://mhsnet.github.io/mhsstudynotes/tools/base/typescript/index.html "《TypeScript 笔记》"
 
-[《Gulp 笔记》]: https://mhsnet.github.io/mhsstudynotes/tools/base/typescript/index.html "《Gulp 笔记》"
+[《Gulp 笔记》]: https://mhsnet.github.io/mhsstudynotes/tools/build/gulp/index.html "《Gulp 笔记》"
 
 [《Cypress 笔记》]: https://mhsnet.github.io/mhsstudynotes/tools/test/cypress/index.html "《Cypress 笔记》"
 [《npm 手册》]: https://mhsnet.github.io/mhsstudynotes/tools/pkg-adm/npm/handbook.html "《npm 手册》"
