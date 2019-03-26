@@ -13,6 +13,8 @@ LVS + keepalived + nginx + [node前|<-->|node前] + (apache+php+eaccelerator|nod
 ## 工具
 - 基础
   - [《TypeScript 笔记》]
+- 构建工具
+  - [《Gulp 笔记》]
 - 前端测试
   - [《Cypress 笔记》]
   - Jest
@@ -54,6 +56,9 @@ LVS + keepalived + nginx + [node前|<-->|node前] + (apache+php+eaccelerator|nod
 [《Vue CLI》]: https://mhsnet.github.io/mhsstudynotes/vue/cli/index.html "《Vue CLI》"
 
 [《TypeScript 笔记》]: https://mhsnet.github.io/mhsstudynotes/tools/base/typescript/index.html "《TypeScript 笔记》"
+
+[《Gulp 笔记》]: https://mhsnet.github.io/mhsstudynotes/tools/base/typescript/index.html "《Gulp 笔记》"
+
 [《Cypress 笔记》]: https://mhsnet.github.io/mhsstudynotes/tools/test/cypress/index.html "《Cypress 笔记》"
 [《npm 手册》]: https://mhsnet.github.io/mhsstudynotes/tools/pkg-adm/npm/handbook.html "《npm 手册》"
 [《yarn 手册》]: https://mhsnet.github.io/mhsstudynotes/tools/pkg-adm/yarn/handbook.html "《yarn 手册》"
