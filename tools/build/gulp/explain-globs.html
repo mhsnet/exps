@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>index.md</title>
+<title>explain-globs.md</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 
 <style>
@@ -385,15 +385,32 @@ blockquote {
 
 </head>
 <body>
-<h1 id="%E3%80%8Amhs-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%8B-%E3%80%8Agulp-%E7%AC%94%E8%AE%B0%E3%80%8B-mhs2019327"><a href="https://mhsnet.github.io/mhsstudynotes/" title="《MHS 学习笔记》">《MHS 学习笔记》</a> &gt; <a href="https://mhsnet.github.io/mhsstudynotes/tools/build/gulp/index.html" title="《Gulp 笔记》">《Gulp 笔记》</a> (mhs2019.3.27)</h1>
+<h1 id="%E3%80%8Amhs-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%8B-%E3%80%8Agulp-%E7%AC%94%E8%AE%B0%E3%80%8B-%E8%AE%B2%E8%A7%A3globs-mhs2019327"><a href="https://mhsnet.github.io/mhsstudynotes/" title="《MHS 学习笔记》">《MHS 学习笔记》</a> &gt; <a href="https://mhsnet.github.io/mhsstudynotes/tools/build/gulp/index.html" title="《Gulp 笔记》">《Gulp 笔记》</a> &gt; <a href="https://mhsnet.github.io/mhsstudynotes/tools/build/gulp/explain-globs.html" title="讲解Globs">讲解Globs</a> (mhs2019.3.27)</h1>
 <ul>
-<li>入门
-<ul>
-<li><a href="https://mhsnet.github.io/mhsstudynotes/tools/build/gulp/quick-start.html" title="快速开始">快速开始</a></li>
-<li><a href="https://mhsnet.github.io/mhsstudynotes/tools/build/gulp/explain-globs.html" title="讲解Globs">讲解Globs</a></li>
+<li><a href="https://mhsnet.github.io/mhsstudynotes/tools/build/gulp/explain-globs.html#description" title="Glob描述">Glob描述</a></li>
+<li><a href="https://mhsnet.github.io/mhsstudynotes/tools/build/gulp/explain-globs.html#use" title="使用">使用</a></li>
 </ul>
-</li>
-</ul>
+<h2 id="span-iddescriptionglob%E6%8F%8F%E8%BF%B0span"><span id="description">Glob描述</span></h2>
+<blockquote>
+<ol>
+<li>glob --- 匹配文件路径的字符串|通配符</li>
+<li>src() --- glob或[glob, ...]确定pipe操作哪些文件</li>
+</ol>
+</blockquote>
+<h2 id="span-iduse%E4%BD%BF%E7%94%A8span"><span id="use">使用</span></h2>
+<blockquote>
+<ol>
+<li>避免使用Node路径方法</li>
+</ol>
+</blockquote>
+<pre class="hljs"><code><div>/ --- 分隔符
+\\ --- 转义
+* --- 0-n字符
+** --- 0-n分段
+! --- 否认
+'src/hello\\*.js' --- 转义*
+['script/**/*.js', '!scripts/vendor/', 'scripts/vendor/react.js'] --- 最后的不去除
+</div></code></pre>
 <h2 id=""></h2>
 
 </body>

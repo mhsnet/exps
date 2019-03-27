@@ -1,4 +1,4 @@
-# [《MHS 学习笔记》] > [《Gulp 笔记》] > [快速开始] (mhs2019.3.26)
+# [《MHS 学习笔记》] > [《Gulp 笔记》] > [series()] (mhs2019.3.27)
 
 - [安装gulp命令行程序]
 - [安装gulp包]
@@ -46,7 +46,7 @@ $ gulp
 ##
 [《MHS 学习笔记》]: https://mhsnet.github.io/mhsstudynotes/ "《MHS 学习笔记》"
 [《Gulp 笔记》]: https://mhsnet.github.io/mhsstudynotes/tools/build/gulp/index.html "《Gulp 笔记》"
-[快速开始]: https://mhsnet.github.io/mhsstudynotes/tools/build/gulp/quick-start.html "快速开始"
+[series()]: https://mhsnet.github.io/mhsstudynotes/tools/build/gulp/api-series.html "series()"
 
 [安装gulp命令行程序]: https://mhsnet.github.io/mhsstudynotes/tools/build/gulp/quick-start.html#install "安装gulp命令行程序"
 [安装gulp包]: https://mhsnet.github.io/mhsstudynotes/tools/build/gulp/quick-start.html#install-gulp "安装gulp包"

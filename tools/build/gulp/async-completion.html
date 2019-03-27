@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>index.md</title>
+<title>async-completion.md</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 
 <style>
@@ -385,15 +385,19 @@ blockquote {
 
 </head>
 <body>
-<h1 id="%E3%80%8Amhs-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%8B-%E3%80%8Agulp-%E7%AC%94%E8%AE%B0%E3%80%8B-mhs2019327"><a href="https://mhsnet.github.io/mhsstudynotes/" title="《MHS 学习笔记》">《MHS 学习笔记》</a> &gt; <a href="https://mhsnet.github.io/mhsstudynotes/tools/build/gulp/index.html" title="《Gulp 笔记》">《Gulp 笔记》</a> (mhs2019.3.27)</h1>
+<h1 id="%E3%80%8Amhs-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%8B-%E3%80%8Agulp-%E7%AC%94%E8%AE%B0%E3%80%8B-%E5%BC%82%E6%AD%A5%E5%AE%8C%E6%88%90-mhs2019327"><a href="https://mhsnet.github.io/mhsstudynotes/" title="《MHS 学习笔记》">《MHS 学习笔记》</a> &gt; <a href="https://mhsnet.github.io/mhsstudynotes/tools/build/gulp/index.html" title="《Gulp 笔记》">《Gulp 笔记》</a> &gt; <a href="https://mhsnet.github.io/mhsstudynotes/tools/build/gulp/async-completion.html" title="异步完成">异步完成</a> (mhs2019.3.27)</h1>
 <ul>
-<li>入门
-<ul>
-<li><a href="https://mhsnet.github.io/mhsstudynotes/tools/build/gulp/quick-start.html" title="快速开始">快速开始</a></li>
-<li><a href="https://mhsnet.github.io/mhsstudynotes/tools/build/gulp/explain-globs.html" title="讲解Globs">讲解Globs</a></li>
+<li><a href="https://mhsnet.github.io/mhsstudynotes/tools/build/gulp/async-completion.html#signal-task-completion" title="任务完成信号">任务完成信号</a></li>
+<li>[parallel()]</li>
 </ul>
-</li>
-</ul>
+<h2 id="span-idsignal-task-completion%E4%BB%BB%E5%8A%A1%E5%AE%8C%E6%88%90%E4%BF%A1%E5%8F%B7span"><span id="signal-task-completion">任务完成信号</span></h2>
+<blockquote>
+<ol>
+<li>任务中stream,promise,event emitter,child process,observable返回error，结束并显示。</li>
+<li>series错误，结束组合，不再执行后面任务。</li>
+<li>parallel错误，结束组合，其它任务完成或未完。</li>
+</ol>
+</blockquote>
 <h2 id=""></h2>
 
 </body>
