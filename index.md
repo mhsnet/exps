@@ -3,6 +3,9 @@
 ## 目标架构
 LVS + keepalived + nginx + [node前|<-->|node前] + (apache+php+eaccelerator|node后|...) + nfs + redis + mysql
 
+## TypeScript
+- [《TypeScript 手册》]
+
 ## Node
 - [《Express 学习》]
 - [《Node 指南》]
@@ -49,6 +52,8 @@ LVS + keepalived + nginx + [node前|<-->|node前] + (apache+php+eaccelerator|nod
 
 ##
 [《MHS 学习笔记》]: https://mhsnet.github.io/mhsstudynotes/ "《MHS 学习笔记》"
+
+[《TypeScript 手册》]: https://mhsnet.github.io/mhsstudynotes/typescript/handbook/index.html "《TypeScript 手册》"
 
 [《Express 学习》]: https://mhsnet.github.io/mhsstudynotes/node/express/index.html "《Express 学习》"
 [《Node 指南》]: https://mhsnet.github.io/mhsstudynotes/node/guide/index.html "《Node 指南》"
