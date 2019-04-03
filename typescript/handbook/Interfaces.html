@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>index.md</title>
+<title>Interfaces.md</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 
 <style>
@@ -385,11 +385,149 @@ blockquote {
 
 </head>
 <body>
-<h1 id="%E3%80%8Amhs-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%8B-%E3%80%8Atypescript-%E6%89%8B%E5%86%8C%E3%80%8B-mhs2019327"><a href="https://mhsnet.github.io/mhsstudynotes/" title="《MHS 学习笔记》">《MHS 学习笔记》</a> &gt; <a href="https://mhsnet.github.io/mhsstudynotes/typescript/handbook/index.html" title="《TypeScript 手册》">《TypeScript 手册》</a> (mhs2019.3.27)</h1>
+<h1 id="%E3%80%8Amhs-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%8B-%E3%80%8Atypescript-%E6%89%8B%E5%86%8C%E3%80%8B-%E6%8E%A5%E5%8F%A3-mhs2019328"><a href="https://mhsnet.github.io/mhsstudynotes/" title="《MHS 学习笔记》">《MHS 学习笔记》</a> &gt; <a href="https://mhsnet.github.io/mhsstudynotes/typescript/handbook/index.html" title="《TypeScript 手册》">《TypeScript 手册》</a> &gt; <a href="https://mhsnet.github.io/mhsstudynotes/typescript/handbook/interfaces.html" title="接口">接口</a> (mhs2019.3.28)</h1>
 <ul>
-<li><a href="https://mhsnet.github.io/mhsstudynotes/typescript/handbook/interfaces.html" title="接口">接口</a></li>
-<li><a href="https://mhsnet.github.io/mhsstudynotes/typescript/handbook/modules.html" title="模块">模块</a></li>
+<li><a href="https://mhsnet.github.io/mhsstudynotes/typescript/handbook/interfaces.html#introduction" title="介绍">介绍</a></li>
+<li><a href="https://mhsnet.github.io/mhsstudynotes/typescript/handbook/interfaces.html#exploration" title="探索">探索</a></li>
+<li><a href="https://mhsnet.github.io/mhsstudynotes/typescript/handbook/interfaces.html#optional-properties" title="可选属性">可选属性</a></li>
+<li><a href="https://mhsnet.github.io/mhsstudynotes/typescript/handbook/interfaces.html#readonly-properties" title="只读属性">只读属性</a></li>
+<li><a href="https://mhsnet.github.io/mhsstudynotes/typescript/handbook/interfaces.html#excess-property-checks" title="额外属性检查">额外属性检查</a></li>
+<li><a href="https://mhsnet.github.io/mhsstudynotes/typescript/handbook/interfaces.html#function-types" title="函数类型">函数类型</a></li>
+<li><a href="https://mhsnet.github.io/mhsstudynotes/typescript/handbook/interfaces.html#indexable-types" title="可索引类型">可索引类型</a></li>
 </ul>
+<h2 id="span-idintroduction%E4%BB%8B%E7%BB%8Dspan"><span id="introduction">介绍</span></h2>
+<blockquote>
+<ol>
+<li>TypeScript核心原则之一，对值进行类型检查（duck typing）。</li>
+<li>接口为这些类型命名，为代码|外部代码提供约定。</li>
+</ol>
+</blockquote>
+<h2 id="span-idexploration%E6%8E%A2%E7%B4%A2span"><span id="exploration">探索</span></h2>
+<blockquote>
+<ol>
+<li>传入参数使用接口定义</li>
+<li>传入多个属性，不按顺序只检查必须属性及其类型，有时并不会如此宽松</li>
+</ol>
+</blockquote>
+<pre class="hljs"><code><div>// examples/typescript/handbook/
+$ gulp taskInterfacesA
+// 接口People
+// : --- 属性
+// ?: --- 可选属性
+// readonly --- 只读
+// ReadonlyArray --- 数组不可变
+// propName --- 添加字符串索引签名
+interface People {
+  name: string;
+  readonly type?: string;
+  labels?: ReadonlyArray&lt;string&gt;;
+  age?: number;
+  [propName: string]: any;
+}
+// 函数
+function printName(user: interfaces.People) {
+  if (user.age) { 
+    console.log(user.age);
+  }
+  console.log(user.name);
+}
+// 测试使用
+let userN = { name: 'Name1' };
+testF.interfaces.printName(userN);
+</div></code></pre>
+<h2 id="span-idoptional-properties%E5%8F%AF%E9%80%89%E5%B1%9E%E6%80%A7span"><span id="optional-properties">可选属性</span></h2>
+<blockquote>
+<ol>
+<li>接口属性可选</li>
+<li>描述可用属性，捕获引用不存在属性时错误</li>
+</ol>
+</blockquote>
+<pre class="hljs"><code><div>// examples/typescript/handbook/
+$ gulp taskInterfacesA
+</div></code></pre>
+<h2 id="span-idreadonly-properties%E5%8F%AA%E8%AF%BB%E5%B1%9E%E6%80%A7span"><span id="readonly-properties">只读属性</span></h2>
+<blockquote>
+<ol>
+<li>对象属性只在创建时修改</li>
+<li>可赋值对象字面量</li>
+<li>ReadonlyArray<T> --- 确保数组创建后不被修改,也不能用于赋值给数组</li>
+<li>ReadonlyArray<T> --- 可用类型断言as修改，用于赋值给数组</li>
+<li>readonly|const --- 用于属性|变量</li>
+</ol>
+</blockquote>
+<pre class="hljs"><code><div>// examples/typescript/handbook/
+$ gulp taskInterfacesB
+let labels: string[] = [];
+let user: testI.People = { type: 'user', labels: ['cs'], name: 'Name1' };
+// error
+// user.type = 'user';
+// user.labels[1] = 'cs2';
+// labels = user.labels;
+//testF.interfaces.printName({ type: 'user', name: 'Name1', ages: 12 });
+labels = user.labels as string[];
+console.log(labels);
+cb();
+</div></code></pre>
+<h2 id="span-idexcess-property-checks%E9%A2%9D%E5%A4%96%E5%B1%9E%E6%80%A7%E6%A3%80%E6%9F%A5span"><span id="excess-property-checks">额外属性检查</span></h2>
+<blockquote>
+<ol>
+<li>对象字面量会被特殊对待，存在接口不包含属性报错。</li>
+<li>解决：as|propName|赋值给另一个变量</li>
+</ol>
+</blockquote>
+<pre class="hljs"><code><div>$ gulp taskInterfacesB
+</div></code></pre>
+<h2 id="span-idfunction-types%E5%87%BD%E6%95%B0%E7%B1%BB%E5%9E%8Bspan"><span id="function-types">函数类型</span></h2>
+<blockquote>
+<ol>
+<li>创建1个函数类型变量，将同类型函数赋值给这个变量。</li>
+<li>参数不需与接口名字相同，会逐个类型检查</li>
+<li>返回值推断检查</li>
+</ol>
+</blockquote>
+<pre class="hljs"><code><div>// 接口
+interface TestFunc {
+  (name: string, age: number): boolean;
+}
+function taskInterfacesC(cb) {
+  // 函数类型
+  let testFunc: testI.InterfaceTestFunc;
+  testFunc = function (name, age) {
+    console.log(name);
+    return true;
+  }
+  testFunc('n1', 11);
+  cb();
+};
+</div></code></pre>
+<h2 id="span-idindexable-types%E5%8F%AF%E7%B4%A2%E5%BC%95%E7%B1%BB%E5%9E%8Bspan"><span id="indexable-types">可索引类型</span></h2>
+<blockquote>
+<ol>
+<li>2种索引签名：字符串和数字。</li>
+<li>常用于Array和Describe，可设readonly。</li>
+</ol>
+</blockquote>
+<pre class="hljs"><code><div>// 可索引类型接口1
+interface TestArr {
+  [index: number]: string;
+}
+// 可索引类型接口2
+interface TestDict {
+  readonly [index: string]: string;
+}
+function taskInterfacesD(cb) {
+  // 索引类型
+  let TestArr: testI.Interfaces.TestArr;
+  TestArr = ['a1', 'a2'];
+  console.log(TestArr[0]);
+  let TestDict: testI.Interfaces.TestDict;
+  TestDict = { 'n1': 'v1', 'n2': 'v2' };
+  // error --- readonly
+  // TestDict.n2 = 'v3';
+  console.log(TestDict.n2);
+  cb();
+};
+</div></code></pre>
 <h2 id=""></h2>
 
 </body>

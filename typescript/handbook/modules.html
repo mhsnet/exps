@@ -387,48 +387,17 @@ blockquote {
 <body>
 <h1 id="%E3%80%8Amhs-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%8B-%E3%80%8Atypescript-%E6%89%8B%E5%86%8C%E3%80%8B-%E6%A8%A1%E5%9D%97-mhs2019328"><a href="https://mhsnet.github.io/mhsstudynotes/" title="《MHS 学习笔记》">《MHS 学习笔记》</a> &gt; <a href="https://mhsnet.github.io/mhsstudynotes/typescript/handbook/index.html" title="《TypeScript 手册》">《TypeScript 手册》</a> &gt; <a href="https://mhsnet.github.io/mhsstudynotes/typescript/handbook/modules.html" title="模块">模块</a> (mhs2019.3.28)</h1>
 <ul>
-<li>[安装gulp命令行程序]</li>
-<li>[安装gulp包]</li>
-<li>[测试]</li>
+<li><a href="https://mhsnet.github.io/mhsstudynotes/typescript/handbook/modules.html#introduction" title="介绍">介绍</a></li>
 </ul>
-<h2 id="span-idinstall%E5%AE%89%E8%A3%85gulp%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%A8%8B%E5%BA%8Fspan"><span id="install">安装gulp命令行程序</span></h2>
-<pre class="hljs"><code><div>$ node -v
-$ npm -v
-$ npx -v
-$ npm ls --depth=0 -g
-$ npm add gulp-cli -g
-</div></code></pre>
-<h2 id="span-idinstall-gulp%E5%AE%89%E8%A3%85gulp%E5%8C%85span"><span id="install-gulp">安装gulp包</span></h2>
-<pre class="hljs"><code><div>$ npx mkdirp my-dir --- 目录www_test/gulp
-$ cd my-dir
-$ npm init -y
-$ npm add gulp -D
-$ npm add ts-node -D
-$ npm add typescript -D
-$ gulp -h
-$ gulp -v
-</div></code></pre>
-<h2 id="span-idtest%E6%B5%8B%E8%AF%95span"><span id="test">测试</span></h2>
+<h2 id="span-idintroduction%E4%BB%8B%E7%BB%8Dspan"><span id="introduction">介绍</span></h2>
 <blockquote>
-<p>新建gulpfile.ts/index.ts</p>
+<ol>
+<li>EcmaScript 2015开始有模块概念，TypesSript共享这个概念。</li>
+<li>模块在自身作用域执行，定义在模块内（variable|function|class|type alias|interface）外部不可见。</li>
+<li>模块间关系通过文件级上使用imports和exports建立。</li>
+<li>含顶级import|export的文件当成模块，相反全局可见（对模块也可见）。</li>
+</ol>
 </blockquote>
-<pre class="hljs"><code><div>function taskA(cb) {
-  console.log('Hello Task A');
-  cb();
-};
-
-function taskB(cb) {
-  console.log('Hello Task B');
-  cb();
-};
-
-export { taskA as default, taskB };
-</div></code></pre>
-<blockquote>
-<p>测试</p>
-</blockquote>
-<pre class="hljs"><code><div>$ gulp
-</div></code></pre>
 <h2 id=""></h2>
 
 </body>
