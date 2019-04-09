@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>sequence_diagram.md</title>
+<title>classes.md</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 
 <style>
@@ -385,150 +385,14 @@ blockquote {
 
 </head>
 <body>
-<h1 id="%E3%80%8A%E6%97%B6%E5%BA%8F%E5%9B%BE%E3%80%8B-home-%E6%9B%B4%E6%96%B0-mhs2019123">《时序图》 [Home] (更新 mhs2019.1.23)</h1>
-<h2 id="1-%E5%8F%82%E4%B8%8E%E5%AF%B9%E8%B1%A1">1. 参与对象</h2>
-<ol>
-<li>无 --- 普通</li>
-<li>actor(角色) --- 人|系统|子系统</li>
-<li>boundary(边界) --- 交互界面</li>
-<li>control(控制) --- 控制</li>
-<li>entity(实体) --- 永久|长期（文件等）</li>
-<li>database(数据库) --- 数据库</li>
-<li>collections(集合) --- 集合</li>
-</ol>
-<pre class="hljs"><code><div>// 对象命名（3）：
-// 1. 对象 --- 长期存在
-// 2. 对象:类 --- 一般
-// 3. 类 --- 匿名对象
-// as --- 重命名
-// #red|#999999 --- 背景色
-// order --- 排序
-@startuml
-participant x1 as &quot;x1:X1&quot; order 10 #999999
-actor x2 as &quot;X2&quot;
-boundary x3 as &quot;x3:X3&quot;
-control x4 as &quot;x4:X4&quot;
-entity x5 as &quot;x5&quot;
-database x6 as &quot;x6&quot;
-collections x7 as &quot;x7&quot;
-@enduml
-</div></code></pre>
-<h2 id="2-%E6%B6%88%E6%81%AF">2. 消息</h2>
-<h6 id="1-%E7%AE%AD%E5%A4%B4%E6%A0%B7%E5%BC%8F%EF%BC%88%E5%8F%AF%E5%8F%8D%E5%90%91%EF%BC%89">1. 箭头样式（可反向）</h6>
-<ol>
-<li>-&gt; 同步发</li>
-<li>--&gt; 同步回</li>
-<li>-&gt;&gt; 异步发</li>
-<li>--&gt;&gt; 异步回</li>
-<li>-&gt;o 同步发（无需回）</li>
-<li>-&gt;&gt;o 异步发（无需回）</li>
-<li>-&gt;x 同步发（失败）</li>
-<li>-&gt;&gt;x 同步发（失败）</li>
-</ol>
-<pre class="hljs"><code><div>// [#red|#999999] --- 箭头颜色
-// autonumber start --- 消息编号（开始）
-// newpage 'titel' --- 分割图
-// note left|note right xxx end note --- 消息注释
-// [...|...10s...] --- 延时
-// == 分隔 == --- 分隔
-// [|||or||20||] --- 空间
-@startuml
-autonumber 1
-X1 -[#red]&gt; X2: hello
-note left 
-注释信息
-end note
-X1 -[#999999]-&gt; X2
-autonumber 1
-X1 -&gt;&gt; X2
-X1 --&gt;&gt; X2
-X1 -&gt;o X2
-X1 -&gt;&gt;o X2
-...10s...
-== 分隔 ==
-||20||
-X1 -&gt;x X2
-newpage '新页面'
-X1 -&gt;&gt;x X2
-@enduml
-</div></code></pre>
-<h2 id="3-%E7%BB%84%E5%90%88%E6%B6%88%E6%81%AF">3. 组合消息</h2>
-<ol>
-<li>alt/else/../end --- [switch语句|if语句]</li>
-<li>opt/end --- [简单if语句]</li>
-<li>loop/end --- [for|forEach|while循环]</li>
-<li>break/end --- [中断]</li>
-<li>par/end --- [并行]</li>
-<li>Critical/end --- [不交错]</li>
-<li>group/end --- [自定义分组]</li>
-</ol>
-<pre class="hljs"><code><div>@startuml
-== if语句 ==
-alt if(x &lt; 10)
-a -[#red]&gt; b: req1
-else else if(x &gt; 100) 
-a -[#red]&gt; b: req2
-else else
-a -[#red]&gt; b: req3
-end
-== switch语句 ==
-alt switch(x) case 'a':
-a -[#blue]&gt; b: req1
-break break;
-end
-else case 'b':
-a -[#blue]&gt; b: req2
-break break;
-end
-else default:
-a -[#blue]&gt; b: req3
-end
-== 简单if语句 ==
-opt if(x &gt; 0)
-a -[#green]&gt; b: req
-end
-== 循环 ==
-group 循环for(var i = 0; i &lt; 5; i=i+1){}
-loop for(var i = 0; i &lt; 5; i++)
-a -[#DarkGreen]&gt; b: req
-end
-end
-group 循环for(var i in collection){}
-loop for(var i in collection)
-a -[#DarkGreen]&gt; b: req
-end
-end
-group 循环collection.forEach((x)=&gt;{});
-loop collection.forEach(x)
-a -[#DarkGreen]&gt; b: req
-end
-end
-group 循环while(){}
-loop while(x &gt; 0)
-a -[#DarkGreen]&gt; b: req
-end
-end
-group 循环do{}while();
-loop do while(x &gt; 0)
-a -[#DarkGreen]&gt; b: req
-end
-end
-== 并行【不交错】 ==
-par
-Critical
-a -[#Yellow]&gt;&gt; b: req1
-a -[#Yellow]&gt;&gt; b: req2
-end
-a -[#Yellow]&gt;&gt; b: req3
-end
-== 自定义分组 ==
-group 任务1
-a -[#Gray]&gt;&gt; b: req1
-a -[#Gray]&gt;&gt; b: req2
-end
-@enduml
-</div></code></pre>
-<p><img src="https://github.com/mhsnet/note/blob/master/imgs_uml/tusd_composite_message.png?raw=true" alt="组合信息" title="UML图组合信息"></p>
+<h1 id="%E3%80%8Amhs-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%8B-%E3%80%8Atypescript-%E6%89%8B%E5%86%8C%E3%80%8B-%E7%B1%BB-mhs201944"><a href="https://mhsnet.github.io/mhsstudynotes/" title="《MHS 学习笔记》">《MHS 学习笔记》</a> &gt; <a href="https://mhsnet.github.io/mhsstudynotes/typescript/handbook/index.html" title="《TypeScript 手册》">《TypeScript 手册》</a> &gt; <a href="https://mhsnet.github.io/mhsstudynotes/typescript/handbook/classes.html" title="类">类</a> (mhs2019.4.4)</h1>
+<ul>
+<li><a href="https://mhsnet.github.io/mhsstudynotes/typescript/handbook/interfaces.html#introduction" title="介绍">介绍</a></li>
+</ul>
+<h2 id="span-idintroduction%E4%BB%8B%E7%BB%8Dspan"><span id="introduction">介绍</span></h2>
+<blockquote>
+<p>Typescript使现在能用基于类的面向对象方式</p>
+</blockquote>
 <h2 id=""></h2>
 
 </body>

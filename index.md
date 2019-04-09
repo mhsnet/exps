@@ -1,7 +1,12 @@
 # 《MHS 学习笔记》
 
 ## 目标架构
-LVS + keepalived + nginx + [node前|<-->|node前] + (apache+php+eaccelerator|node后|...) + nfs + redis + mysql
+LVS + keepalived + nginx + node + nfs + redis + mysql
+
+## 框架
+- [《Nest 学习》]
+- [《Taro 学习》]
+
 
 ## TypeScript
 - [《TypeScript 手册》]
@@ -27,10 +32,9 @@ LVS + keepalived + nginx + [node前|<-->|node前] + (apache+php+eaccelerator|nod
   - rpm
   - [《yarn 手册》]
   - yum
+- UML
+  
 - [《npm CLI》]
-
-## <span>框架</span>
-1. [Aqueduct] - Dart框架
 
 
 ## <span>数据库知识</span>
@@ -55,6 +59,9 @@ LVS + keepalived + nginx + [node前|<-->|node前] + (apache+php+eaccelerator|nod
 
 [《TypeScript 手册》]: https://mhsnet.github.io/mhsstudynotes/typescript/handbook/index.html "《TypeScript 手册》"
 
+[《Nest 学习》]: https://mhsnet.github.io/mhsstudynotes/framework/nest/index.html "《Nest 学习》"
+[《Taro 学习》]: https://mhsnet.github.io/mhsstudynotes/framework/taro/index.html "《Taro 学习》"
+
 [《Express 学习》]: https://mhsnet.github.io/mhsstudynotes/node/express/index.html "《Express 学习》"
 [《Node 指南》]: https://mhsnet.github.io/mhsstudynotes/node/guide/index.html "《Node 指南》"
 
@@ -68,8 +75,6 @@ LVS + keepalived + nginx + [node前|<-->|node前] + (apache+php+eaccelerator|nod
 [《npm 手册》]: https://mhsnet.github.io/mhsstudynotes/tools/pkg-adm/npm/handbook.html "《npm 手册》"
 [《yarn 手册》]: https://mhsnet.github.io/mhsstudynotes/tools/pkg-adm/yarn/handbook.html "《yarn 手册》"
 [《npm CLI》]: https://mhsnet.github.io/mhsstudynotes/tools/npm/cli/index.html "《npm CLI》"
-
-[Aqueduct]: https://mhsnet.github.io/mhsstudynotes/framework/aqueduct/index.html "《Aqueduct》"
 
 [PostgreSQL 笔记]: https://mhsnet.github.io/mhsstudynotes/database/postgresql_note.html "《PostgreSQL 笔记》"
 

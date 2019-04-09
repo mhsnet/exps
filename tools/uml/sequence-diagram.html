@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>getting_started.md</title>
+<title>sequence-diagram.md</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 
 <style>
@@ -385,111 +385,104 @@ blockquote {
 
 </head>
 <body>
-<h1 id="%E5%BC%80%E5%A7%8B-home-aqueduct-mhs2019221">开始 <a href="https://mhsnet.github.io/mhsstudynotes/" title="《MHS技术栈学习笔记》">Home</a> <a href="https://mhsnet.github.io/mhsstudynotes/framework/aqueduct/index.html" title="《Aqueduct》">Aqueduct</a> (mhs2019.2.21)</h1>
+<h1 id="%E3%80%8Amhs-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%8B-%E3%80%8A%E6%97%B6%E5%BA%8F%E5%9B%BE%E3%80%8B-%E5%BC%80%E5%A7%8B-mhs201943"><a href="https://mhsnet.github.io/mhsstudynotes/" title="《MHS 学习笔记》">《MHS 学习笔记》</a> &gt; <a href="https://mhsnet.github.io/mhsstudynotes/tools/uml/sequence-diagram.html" title="《时序图》">《时序图》</a> &gt; 开始 (mhs2019.4.3)</h1>
 <ul>
-<li><a href="https://mhsnet.github.io/mhsstudynotes/framework/aqueduct/tutorial/getting_started.html#installation" title="安装(Installation)">安装</a></li>
-<li><a href="https://mhsnet.github.io/mhsstudynotes/framework/aqueduct/tutorial/getting_started.html#creating-project" title="创建项目(Creating a Project)">创建项目</a></li>
-<li><a href="https://mhsnet.github.io/mhsstudynotes/framework/aqueduct/tutorial/getting_started.html#linking-controllers" title="链接控制器(Linking Controllers)">链接控制器</a></li>
-<li><a href="https://mhsnet.github.io/mhsstudynotes/framework/aqueduct/tutorial/getting_started.html#advanced-routing" title="高级路由(Advanced Routing)">高级路由</a></li>
-<li><a href="https://mhsnet.github.io/mhsstudynotes/framework/aqueduct/tutorial/getting_started.html#resource-controllers" title="资源控制器(ResourceControllers)">资源控制器</a></li>
-<li><a href="https://mhsnet.github.io/mhsstudynotes/framework/aqueduct/tutorial/getting_started.html#multi-threading-and-application-state" title="多线程和应用程序状态(Multi-threading and Application State)">多线程和应用程序状态</a></li>
+<li><a href="https://mhsnet.github.io/mhsstudynotes/tools/uml/sequence-diagram.html#message" title="信息">信息</a></li>
+<li><a href="https://mhsnet.github.io/mhsstudynotes/tools/uml/sequence-diagram.html#type" title="类型">类型</a></li>
+<li><a href="https://mhsnet.github.io/mhsstudynotes/tools/uml/sequence-diagram.html#colour" title="颜色">颜色</a></li>
+<li><a href="https://mhsnet.github.io/mhsstudynotes/tools/uml/sequence-diagram.html#group" title="分组">分组</a></li>
 </ul>
-<h2 id="span-idinstallation%E5%AE%89%E8%A3%85span-top"><span id="installation">安装</span> <a href="https://mhsnet.github.io/mhsstudynotes/framework/aqueduct/tutorial/getting_started.html" title="开始">Top</a></h2>
-<pre class="hljs"><code><div>$ pub global activate aqueduct --- 安装Aqueduct命令行工具
-</div></code></pre>
-<h2 id="span-idcreating-project%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AEspan-top"><span id="creating-project">创建项目</span> <a href="https://mhsnet.github.io/mhsstudynotes/framework/aqueduct/tutorial/getting_started.html" title="开始">Top</a></h2>
-<pre class="hljs"><code><div>$ aqueduct create dart_study_server --- 创建Aqueduct项目
-$ aqueduct serve --- 启动项目
-</div></code></pre>
-<h2 id="span-idlinking-controllers%E9%93%BE%E6%8E%A5%E6%8E%A7%E5%88%B6%E5%99%A8linking-controllersspan-top"><span id="linking-controllers">链接控制器(Linking Controllers)</span> <a href="https://mhsnet.github.io/mhsstudynotes/framework/aqueduct/tutorial/getting_started.html" title="开始">Top</a></h2>
-<pre class="hljs"><code><div>@override
-Controller get entryPoint {
-  final router = Router();
-  
-  router
-    .route('/users')
-    .link(() =&gt; APIKeyValidator())
-    .link(() =&gt; Authorizer.bearer())
-    .link(() =&gt; UsersController());
-
-  router
-    .route('/posts')
-    .link(() =&gt; APIKeyValidator())
-    .link(() =&gt; PostsController());
-
-  return router;
-}
-</div></code></pre>
-<blockquote>
-<p>控制器处理请求(request)，可发送响应（response）或让链接控制器处理。默认router发送404，添加（a route）到router，创建控制器可以链接到的新通道(channel)入口点(entry point)。</p>
-</blockquote>
-<blockquote>
-<p>控制器分终点(Endpoint)和中间件(Middleware)：</p>
-<ol>
-<li>终点控制器(Endpoint controllers)：发送响应(response)，实现请求(request)寻求的行为。</li>
-<li>中间件控制器(Middleware controllers)：可创建任何中间件，在到达终端控制器前处理请求(request)，提供你喜欢的行为。例（Router：将请求定向到正确的控制器；Authorizer：验证请求的授权）。</li>
-</ol>
-</blockquote>
-<blockquote>
-<p>通道可有0或多个中间件控制器，以终点控制器结束。大多控制器只能有一个链接控制器，但路由可有多个。</p>
-</blockquote>
-<h2 id="span-idadvanced-routing%E9%AB%98%E7%BA%A7%E8%B7%AF%E7%94%B1advanced-routingspan-top"><span id="advanced-routing">高级路由(Advanced Routing)</span> <a href="https://mhsnet.github.io/mhsstudynotes/framework/aqueduct/tutorial/getting_started.html" title="开始">Top</a></h2>
+<h2 id="span-idmessage%E4%BF%A1%E6%81%AFspan"><span id="message">信息</span></h2>
 <blockquote>
 <ol>
-<li>/:xxx --- 路径变量</li>
-<li>/[:xxx] --- 路径变量可选</li>
+<li>实例间消息传递</li>
+<li>header/footer/title</li>
+<li>group --- 信息自定义</li>
 </ol>
 </blockquote>
-<pre class="hljs"><code><div>router
-  .route('/users/[:id]')
-  .link(() =&gt; UsersController());
+<img src="http://www.plantuml.com/plantuml/svg/RO-n3i8m34HtVuN7CdGeR0YXfXA8WP4VY5AdH0f9SPoXVqzQeQ9A3BxJsVS6jqaqItvvU9BkYV6s6DWOfQJhOY1EFE5ZLe2n0CwuKGT1jKaTAApFs1sHwTt0m36Fw6obqXJC3X3NpJqEBc3Anb1ADdi_pMU5ftgXfIc9GhyYv1FzEAkTftvBxFyGrOKvyhPt-FRcQOkKrpy0" alt="uml diagram">
+<blockquote>
+<p>代码：</p>
+</blockquote>
+<pre class="hljs"><code><div>@startuml
+participant A
+participant B
+A -&gt; B: req1
+group if
+  group if(Login successfully)
+  A &lt;- B: rt1
+  end
+  group else if(Login failed)
+  A &lt;- B: rt2
+  end
+  group else
+  A &lt;- B: rt3
+  end
+end
+@enduml
 </div></code></pre>
-<h2 id="span-idresource-controllers%E8%B5%84%E6%BA%90%E6%8E%A7%E5%88%B6%E5%99%A8resourcecontrollersspan-top"><span id="resource-controllers">资源控制器(ResourceControllers)</span> <a href="https://mhsnet.github.io/mhsstudynotes/framework/aqueduct/tutorial/getting_started.html" title="开始">Top</a></h2>
+<h2 id="span-idtype%E7%B1%BB%E5%9E%8Bspan"><span id="type">类型</span></h2>
 <blockquote>
-<p>例（lib/controller/users_controller.dart）：</p>
+<p>使用&lt;&lt;和&gt;&gt;定义类型</p>
 </blockquote>
-<pre class="hljs"><code><div>import 'package:aqueduct/aqueduct.dart';
-import 'package:dart_study_server/dart_study_server.dart';
-
-class UsersController extends ResourceController {
-  final _users = [
-    {'id': 1, 'name': '用户1'},
-    {'id': 2, 'name': '用户2'},
-    {'id': 3, 'name': '用户3'}
-  ];
-
-  @Operation.get()
-  Future&lt;Response&gt; getAllUsers() async {
-    return Response.ok(_users);
-  }
-
-  @Operation.get('id')
-  Future&lt;Response&gt; getUserByID(@Bind.path('id') int id) async {
-    final user =
-        _users.firstWhere((user) =&gt; user['id'] == id, orElse: () =&gt; null);
-    if (user == null) {
-      return Response.notFound();
-    }
-    return Response.ok(user);
-  }
-}
+<img src="http://www.plantuml.com/plantuml/svg/NSvH2e0W40JG_qxXGK8izI1R6Wcs6pP1tRxzpQ-1UGoCkq0Dzr67KxEivII6cSmuJYkaMVlhP-rdkJbHUploIbuOJMedGIKo2lf9L0W4MkZAIdj9sMmYMEGPNEQahpu0" alt="uml diagram">
+<blockquote>
+<p>代码：</p>
+</blockquote>
+<pre class="hljs"><code><div>@startuml
+participant A &lt;&lt;Actor&gt;&gt;
+participant B &lt;&lt;Boundary&gt;&gt;
+participant C &lt;&lt;Control&gt;&gt;
+participant D &lt;&lt;Entity&gt;&gt;
+participant E &lt;&lt;Database&gt;&gt;
+hide footbox
+@enduml
 </div></code></pre>
+<h2 id="span-idcolour%E9%A2%9C%E8%89%B2span"><span id="colour">颜色</span></h2>
 <blockquote>
-<p>资源控制器(ResourceController)：每个方法都有一个操作注释(Operation annotation)，用于标识请求必须触发的HTTP方法和路径变量。</p>
+<p>颜色[浅绿(#aqua)|黑(#black)|蓝(#blue)|紫红(#fuchsia)|灰(#gray)|绿(#green)|石灰(#lime)|褐红(#maroon)|海蓝(#navy)|橄榄(#olive)|紫(#purple)|红(#red)|银(#silver)|蓝绿(#teal)|白(#white)|黄(#yellow)]</p>
 </blockquote>
+<img src="http://www.plantuml.com/plantuml/svg/NP5B3eCm30NtdC9IBi9L39XYrVaq951kNuTqOpPlq8n85XdtWhbKBqDIyim9Gm7yL0JNrkX9S7w3k_48bPglPFHQvsrdFUd_OU8humMkxKCJXUOL9WXxlQEjqHvpZFf3fqa13xsXhT5H-D2JRfYGQawYfTEaJ0iu7IDtbeCok4wJ2g60QslqkN7H2swOS958FC5r3Xil16kCPOhVOQImw0Fz0000" alt="uml diagram">
 <blockquote>
-<p>可以绑定路径变量(path variables)、头(headers)、查询参数(query parameters)和主体(bodies)。绑定路径变量时，我们必须用参数指定哪个路径变量为@Bind.path(pathvariablename)</p>
+<p>代码：</p>
 </blockquote>
-<h2 id="span-idmulti-threading-and-application-state%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%92%8C%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E7%8A%B6%E6%80%81multi-threading-and-application-statespan-top"><span id="multi-threading-and-application-state">多线程和应用程序状态(Multi-threading and Application State)</span> <a href="https://mhsnet.github.io/mhsstudynotes/framework/aqueduct/tutorial/getting_started.html" title="开始">Top</a></h2>
+<pre class="hljs"><code><div>@startuml
+participant aqua #aqua
+participant black #black
+participant blue #blue
+participant fuchsia #fuchsia
+participant gray #gray
+participant green #green
+participant lime #lime
+participant maroon #maroon
+participant navy #navy
+participant olive #olive
+participant purple #purple
+participant red #red
+participant silver #silver
+participant teal #teal
+participant white #white
+participant yellow #yellow
+hide footbox
+@enduml
+</div></code></pre>
+<h2 id="span-idgroup%E5%88%86%E7%BB%84span"><span id="group">分组</span></h2>
 <blockquote>
-<ol>
-<li>将数据存数据库，使程序重启时不丢失。</li>
-<li>伴随部署容器化，无状态Web服务成为一种需求，Aqueduct多线程使检查违反此规则更容易。</li>
-<li>Aqueduct运行时创建多线程，每个线程拥有独立isolated，数据不能访问其它线程。</li>
-<li>每个isolated创建通道实例，每个请求只提供1个isolated，负载均衡器后多个服务运行行为相同，并且速度更快。</li>
-<li>应用程序中存储数据，更改数据只会在某个isolated中更改，再次请求不太可能看到更改—另一个具有不同数据的isolated可能处理该请求。</li>
-</ol>
+<p>用(box|end box)添加分组|标题|背景色</p>
 </blockquote>
+<img src="http://www.plantuml.com/plantuml/svg/JOtB3O0W44JFRXKJQ4Im4f5LIH08Wh5yrnkdoRpCPxxRMbk_8XNHi8MofWO3NTcJoo-KXKaUYuA-GtouqZGcBVHHcHC18rwWNUnCB5LPeJDunfvp-yqiL1u_" alt="uml diagram">
+<blockquote>
+<p>代码：</p>
+</blockquote>
+<pre class="hljs"><code><div>@startuml
+participant A #red
+box &quot;B And C&quot; #silver
+	participant B #green
+  participant C #blue
+end box
+hide footbox
+@enduml
+</div></code></pre>
 <h2 id=""></h2>
 
 </body>
