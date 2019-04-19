@@ -9,7 +9,11 @@
   5. [Headers]
   6. [路由参数]
   7. [请求负载]
-  
+- [提供者]
+- [模块]
+  1. [功能模块]
+- [中间件]
+
 
 ## <span id="install">安装</span>
 ```
@@ -80,6 +84,25 @@ postParam(@Body() userTestDto: UserTestDto): UserTestDto {
 }
 ```
 
+## <span id="providers">提供者</span>
+> 1. 许多基础类(services,repositories,factories,helpers...)都认为是提供者
+> 2. providers只是用@Injectable()注释的类
+> 3. 可通过constructor注入依赖关系
+
+## <span id="modules">模块</span>
+> 1. 模块是用@Module()的类
+> 2. @Module()提供原数据来组织应用结构
+> 3. 应用至少1个根模块，模块组织组件，封装相关功能
+
+### <span id="modules-feature-modules">功能模块</span>
+> 1. 功能模块 --- 保持代码有序，边界清晰，使用SOLID原则，控制复制性
+> 2. CatsController和CatsService属同一应用，密切相关，移入功能模块
+
+## <span id="middleware">中间件</span>
+> 1. 路由处理前调用|访问请求|返回对象|
+> 2. @Module()提供原数据来组织应用结构
+> 3. 应用至少1个根模块，模块组织组件，封装相关功能
+
 ##
 [《MHS 学习笔记》]: https://mhsnet.github.io/mhsstudynotes/ "《MHS 学习笔记》"
 [《Nest 学习》]: https://mhsnet.github.io/mhsstudynotes/framework/nest/index.html "《Nest 学习》"
@@ -95,3 +118,11 @@ postParam(@Body() userTestDto: UserTestDto): UserTestDto {
 [Headers]: https://mhsnet.github.io/mhsstudynotes/framework/nest/start.html#controllers-headers "Headers"
 [路由参数]: https://mhsnet.github.io/mhsstudynotes/framework/nest/start.html#controllers-route-parameters "路由参数"
 [请求负载]: https://mhsnet.github.io/mhsstudynotes/framework/nest/start.html#controllers-request-payloads "请求负载"
+
+[提供者]: https://mhsnet.github.io/mhsstudynotes/framework/nest/start.html#providers "提供者"
+
+[模块]: https://mhsnet.github.io/mhsstudynotes/framework/nest/start.html#modules "模块"
+[功能模块]: https://mhsnet.github.io/mhsstudynotes/framework/nest/start.html#modules-feature-modules "功能模块"
+
+[中间件]: https://mhsnet.github.io/mhsstudynotes/framework/nest/start.html#middleware "中间件"
+

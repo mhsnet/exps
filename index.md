@@ -7,6 +7,8 @@ LVS + keepalived + nginx + node + nfs + redis + mysql
 - [《Nest 学习》]
 - [《Taro 学习》]
 
+## 数据库
+
 
 ## TypeScript
 - [《TypeScript 手册》]
