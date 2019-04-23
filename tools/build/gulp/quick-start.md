@@ -14,9 +14,10 @@ $ npm add gulp-cli -g
 ```
 ## <span id="install-gulp">安装gulp包</span>
 ```
-$ npx mkdirp my-dir --- 目录www_test/gulp
-$ cd my-dir
+$ npx mkdirp tp-gts --- 目录tp-gts
+$ cd tp-gts
 $ npm init -y
+$ npm add @types/gulp -D
 $ npm add gulp -D
 $ npm add ts-node -D
 $ npm add typescript -D
