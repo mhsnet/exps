@@ -3,15 +3,14 @@
 ## 目标架构
 LVS + keepalived + nginx + node + nfs + redis + mysql
 
+## TypeScript
+- [《TypeScript 学习》]
+
 ## 框架
 - [《Nest 学习》]
 - [《Taro 学习》]
 
 ## 数据库
-
-
-## TypeScript
-- [《TypeScript 手册》]
 
 ## Node
 - [《Express 学习》]
@@ -59,7 +58,7 @@ LVS + keepalived + nginx + node + nfs + redis + mysql
 ##
 [《MHS 学习笔记》]: https://mhsnet.github.io/mhsstudynotes/ "《MHS 学习笔记》"
 
-[《TypeScript 手册》]: https://mhsnet.github.io/mhsstudynotes/typescript/handbook/index.html "《TypeScript 手册》"
+[《TypeScript 学习》]: https://mhsnet.github.io/mhsstudynotes/typescript/index.html "《TypeScript 学习》"
 
 [《Nest 学习》]: https://mhsnet.github.io/mhsstudynotes/framework/nest/index.html "《Nest 学习》"
 [《Taro 学习》]: https://mhsnet.github.io/mhsstudynotes/framework/taro/index.html "《Taro 学习》"
