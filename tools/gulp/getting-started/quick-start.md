@@ -16,7 +16,7 @@ $ npx -v
 > 1. 支持Typescript
 ```
 $ npm ls --depth=0 -g
-$ npm add gulp-cli -gnpm add ts-node -D
+$ npm add gulp-cli -g
 $ npx mkdirp tp-gts --- 目录tp-gts
 $ cd tp-gts
 $ npm init -y
@@ -56,7 +56,7 @@ $ gulp
 [《MHS 学习笔记》]: https://mhsnet.github.io/mhsstudynotes/ "《MHS 学习笔记》"
 [《Gulp 学习》]: https://mhsnet.github.io/mhsstudynotes/tools/gulp/index.html "《Gulp 学习》"
 
-[《开始》]: https://mhsnet.github.io/mhsstudynotes/tools/gulp/getting-started/quick-start.html "《开始》"
+[开始]: https://mhsnet.github.io/mhsstudynotes/tools/gulp/getting-started/quick-start.html "开始"
 
 [检查node|npm|npx]: https://mhsnet.github.io/mhsstudynotes/tools/gulp/getting-started/quick-start.html#check-for-node-npm-and-npx "检查node|npm|npx"
 [安装gulp包]: https://mhsnet.github.io/mhsstudynotes/tools/gulp/getting-started/quick-start.html#install-gulp "安装gulp包"

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>modules.md</title>
+<title>creating-tasks.md</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 
 <style>
@@ -385,112 +385,18 @@ blockquote {
 
 </head>
 <body>
-<h1 id="%E3%80%8Amhs-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%8B-%E3%80%8Atypescript-%E5%AD%A6%E4%B9%A0%E3%80%8B-%E6%A8%A1%E5%9D%97-mhs2019423"><a href="https://mhsnet.github.io/mhsstudynotes/" title="《MHS 学习笔记》">《MHS 学习笔记》</a> &gt; <a href="https://mhsnet.github.io/mhsstudynotes/typescript/index.html" title="《TypeScript 学习》">《TypeScript 学习》</a> &gt; <a href="https://mhsnet.github.io/mhsstudynotes/typescript/handbook/modules.html" title="模块">模块</a> (mhs2019.4.23)</h1>
+<h1 id="%E3%80%8Amhs-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%8B-%E3%80%8Agulp-%E5%AD%A6%E4%B9%A0%E3%80%8B-%E5%88%9B%E5%BB%BA%E4%BB%BB%E5%8A%A1-mhs2019423"><a href="https://mhsnet.github.io/mhsstudynotes/" title="《MHS 学习笔记》">《MHS 学习笔记》</a> &gt; <a href="https://mhsnet.github.io/mhsstudynotes/tools/gulp/index.html" title="《Gulp 学习》">《Gulp 学习》</a> &gt; <a href="https://mhsnet.github.io/mhsstudynotes/tools/gulp/getting-started/creating-tasks.html" title="创建任务">创建任务</a> (mhs2019.4.23)</h1>
 <ul>
-<li><a href="https://mhsnet.github.io/mhsstudynotes/typescript/handbook/modules.html#introduction" title="介绍">介绍</a></li>
-<li><a href="https://mhsnet.github.io/mhsstudynotes/typescript/handbook/modules.html#export" title="导出">导出</a></li>
-<li><a href="https://mhsnet.github.io/mhsstudynotes/typescript/handbook/modules.html#import" title="导入">导入</a></li>
+<li><a href="https://mhsnet.github.io/mhsstudynotes/tools/gulp/getting-started/creating-tasks.html#exporting" title="出口">出口</a></li>
 </ul>
-<h2 id="span-idintroduction%E4%BB%8B%E7%BB%8Dspan"><span id="introduction">介绍</span></h2>
-<blockquote>
-<ol>
-<li>模块（外部模块）和命名空间（内部模块）</li>
-<li>模块自声明，在自身作用域执行，含顶级import|export的文件当成模块，相反全局可见（对模块也可见）</li>
-<li>2个模块关系在文件级使用export和import建立</li>
-<li>尽可能顶层导出</li>
-<li>导出单个,使用 export default</li>
-<li>导出多个放顶层，导入明确名字</li>
-<li>导出大量，导入使用命名空间模式</li>
-<li>使用重新导出进行扩展</li>
-</ol>
-</blockquote>
-<h2 id="span-idexport%E5%AF%BC%E5%87%BAspan"><span id="export">导出</span></h2>
-<blockquote>
-<ol>
-<li>可导出任何声明(variable|function|class|type alias|interface)</li>
-</ol>
-</blockquote>
-<pre class="hljs"><code><div>export interface Xx {};
-export class Xx {}
-export const xXx = ...;
-export function xXx(){}
-</div></code></pre>
-<blockquote>
-<ol start="2">
-<li>导出语句(方便重命名)</li>
-</ol>
-</blockquote>
-<pre class="hljs"><code><div>export { Xx, xX };
-export { Xx as Xx };
-</div></code></pre>
-<blockquote>
-<ol start="3">
-<li>重新导出</li>
-</ol>
-</blockquote>
-<pre class="hljs"><code><div>export {Xx as Xx} from &quot;./xxx&quot;;
-</div></code></pre>
-<blockquote>
-<ol start="4">
-<li>包裹多个模块并把它们导出内容放一起</li>
-</ol>
-</blockquote>
-<pre class="hljs"><code><div>export * from &quot;./xxx&quot;;
-export * from &quot;./xxx&quot;;
-</div></code></pre>
-<blockquote>
-<ol start="5">
-<li>默认导出(支持ES6)</li>
-</ol>
-</blockquote>
-<pre class="hljs"><code><div>export default xxx;
-</div></code></pre>
-<blockquote>
-<ol start="6">
-<li>默认导出(支持CommonJS|AMD)</li>
-</ol>
-</blockquote>
-<pre class="hljs"><code><div>export = xxx;
-</div></code></pre>
-<h2 id="span-idimport%E5%AF%BC%E5%85%A5span"><span id="import">导入</span></h2>
-<blockquote>
-<ol>
-<li>导入模块中某个内容，可重命名</li>
-</ol>
-</blockquote>
-<pre class="hljs"><code><div>import { Xx as Xx } from &quot;./xxx&quot;;
-</div></code></pre>
-<blockquote>
-<ol start="2">
-<li>整个模块导入变量</li>
-</ol>
-</blockquote>
-<pre class="hljs"><code><div>import * as xxx from &quot;./xxx&quot;;
-</div></code></pre>
-<blockquote>
-<ol start="3">
-<li>有副作用的导入(全局状态)</li>
-</ol>
-</blockquote>
-<pre class="hljs"><code><div>import &quot;./xxx.js&quot;;
-</div></code></pre>
-<blockquote>
-<ol start="4">
-<li>导入默认(支持ES6)</li>
-</ol>
-</blockquote>
-<pre class="hljs"><code><div>import xxx from &quot;./xxx&quot;;
-</div></code></pre>
-<blockquote>
-<ol start="5">
-<li>导入默认(支持CommonJS|AMD)</li>
-</ol>
-</blockquote>
-<pre class="hljs"><code><div>import xxx = require(&quot;./xxx&quot;);
+<h2 id="span-idexporting%E5%87%BA%E5%8F%A3span"><span id="exporting">出口</span></h2>
+<pre class="hljs"><code><div>$ node -v
+$ npm -v
+$ npx -v
 </div></code></pre>
 <h2 id=""></h2>
 <h2 id=""></h2>
-<h3 id=""></h3>
+<h2 id=""></h2>
 
 </body>
 </html>
