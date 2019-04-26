@@ -3,7 +3,7 @@
 - [出口]
 
 ## <span id="exporting">出口</span>
-> 1. 任务包含共有(export)|私有
+> 1. 任务包含公有(export)|私有
 ```
 
 ```
