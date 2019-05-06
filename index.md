@@ -27,6 +27,7 @@ LVS + keepalived + nginx + node + nfs + redis + mysql
   - Jest
   - Puppeteer
 - 包管理
+  - [《Homebrew 学习》]
   - [《npm 手册》]
   - rpm
   - [《yarn 手册》]
@@ -70,6 +71,8 @@ LVS + keepalived + nginx + node + nfs + redis + mysql
 [《Gulp 学习》]: https://mhsnet.github.io/mhsstudynotes/tools/gulp/index.html "《Gulp 学习》"
 ##
 [《Cypress 笔记》]: https://mhsnet.github.io/mhsstudynotes/tools/test/cypress/index.html "《Cypress 笔记》"
+####
+[《Homebrew 学习》]: https://mhsnet.github.io/mhsstudynotes/tools/pkg-adm/brew/index.html "《Homebrew 学习》"
 [《npm 手册》]: https://mhsnet.github.io/mhsstudynotes/tools/pkg-adm/npm/handbook.html "《npm 手册》"
 [《yarn 手册》]: https://mhsnet.github.io/mhsstudynotes/tools/pkg-adm/yarn/handbook.html "《yarn 手册》"
 [《npm CLI》]: https://mhsnet.github.io/mhsstudynotes/tools/npm/cli/index.html "《npm CLI》"
